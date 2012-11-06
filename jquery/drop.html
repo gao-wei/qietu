@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Droppable demo - Interface plugin for jQuery</title>
+<script type="text/javascript" src="jquery/jquery126.js"></script>
+<script type="text/javascript" src="interface/interface.js"></script>
+<style type="text/css" media="all">
+
+body
+{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+}
+#drag
+{
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #0090DF;
+	background-color: #68BFEF;
+	padding: 10px;
+	top: 10px;
+	left: 10px;
+}
+
+#drop1
+{
+	top: 100px;
+	left: 10px;
+}
+#drop2
+{
+	top: 100px;
+	left: 180px;
+}
+#drop3
+{
+	top: 100px;
+	left: 350px;
+}
+.dropzone
+{
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	background-color: #BBEF68;
+	padding: 10px;
+}
+.dropactive
+{
+	background-color: #fc9;
+}
+.drophover
+{
+	background-color: #ffc;
+}
+</style>
+</head>
+<body>
+<div id="drop1" class="dropzone">Accepts the element if fits inside</div>
+<div id="drop2" class="dropzone">Accepts the element if intersects</div>
+<div id="drop3" class="dropzone">Accepts the element if pointer hovers</div>
+<div id="drag" class="dropaccept">Drag me</div>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#drag').Draggable();
+		$('#drop1').Droppable(
+			{
+				accept :		'dropaccept', 
+				activeclass:	'dropactive', 
+				hoverclass:		'drophover',
+				tolerance:		'fit'
+			}
+		);
+		$('#drop2').Droppable(
+			{
+				accept :		'dropaccept', 
+				activeclass:	'dropactive', 
+				hoverclass:		'drophover',
+				tolerance:		'intersect'
+			}
+		);
+		$('#drop3').Droppable(
+			{
+				accept :		'dropaccept', 
+				activeclass:	'dropactive', 
+				hoverclass:		'drophover',
+				tolerance:		'pointer'
+			}
+		);
+	}
+);
+</script>
+		<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+		<noscript>
+		<p><img alt="" src="http://stats.byspirit.ro/image.php?client_id=1" width="1" height="1" /></p>
+		</noscript>
+</body>
+</html>

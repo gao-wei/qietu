@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* Global*/
+body { 
+	font-family:"宋体", Arial; 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px; 
+}
+.body_div {
+	width:960px;
+	margin:0px auto;
+	overflow:hidden;
+}
+div, form, img, ul, ol, li, dl, dt, dd, p{ 
+	margin:0px; 
+	padding:0px; 
+	border:0; 
+}
+li { 
+	list-style:none; 
+}
+h1, h2, h3, h4, h5, h6, input { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px; 
+}
+table, td, tr, th { 
+	font-size:12px; 
+}
+
+a:link { 
+	color: #333; 
+	text-decoration:none; 
+}
+a:visited { 
+	color: #333; 
+	text-decoration:none; 
+}
+a:hover { 
+	color: #ff0000; 
+	text-decoration:underline; 
+}
+a:active { 
+	color: #333; 
+	text-decoration:none; 
+}
+.spaceline { 
+	clear:both; 
+	line-height:10px; 
+	height:10px; 
+}
+.clear {
+	clear: both; 
+	font-size:0px; 
+	width:0px; 
+	height:0px; 
+	line-height:0px; 
+	padding:0px !important;
+	margin:0px !important;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+/* font-size */
+.f12px { 
+	font-size:12px; 
+}
+.f14px { 
+	font-size:14px; 
+}
+.f20px { 
+	font-size:20px;
+}
+.header, #main, .foot{
+	clear:both; 
+	overflow:hidden;
+}
+

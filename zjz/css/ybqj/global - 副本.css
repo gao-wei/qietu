@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* Global*/
+body { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px;
+	font-family:"宋体",Arial;
+}
+div, form, img, ul, ol, li, dl, dt, dd, p{ 
+	margin:0px; 
+	padding:0px; 
+	border:0; 
+}
+li { 
+	list-style:none; 
+}
+h1, h2, h3, h4, h5, h6, input { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px; 
+}
+table, td, tr, th { 
+	font-size:12px; 
+}
+
+a:link { 
+	color: #333; 
+	text-decoration:none; 
+}
+a:visited { 
+	color: #333; 
+	text-decoration:none; 
+}
+a:hover { 
+	color: #666; 
+	text-decoration:none; 
+}
+a:active { 
+	color: #666; 
+	text-decoration:none; 
+}
+.spaceline { 
+	clear:both; 
+	height:10px;
+	overflow:hidden;
+}
+.spaceline_15 { 
+	clear:both; 
+	height:15px;
+	overflow:hidden;
+}
+.spaceline_8 { 
+	clear:both; 
+	height:8px;
+	overflow:hidden;
+}
+.clear {
+	clear: both; 
+	font-size:0px; 
+	width:0px; 
+	height:0px; 
+	line-height:0px; 
+	padding:0px !important;
+	margin:0px !important;
+}
+/* header */
+.header {
+	width:950px;
+	margin:0px auto;
+	height:220px;
+	overflow:hidden;
+	position:relative;
+}
+.header_top {
+	height:28px;
+	line-height:28px;
+	color:#555555;
+	padding-left:30px;
+}
+.header_top span {
+	float:right;
+	padding-right:120px;
+	font-weight:bold;
+	color:#999;
+}
+.header_banner {
+	width:950px;
+	height:96px;
+	overflow:hidden;
+}
+.header_login {
+	width:86px;
+	height:75px;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	right:17px;
+}
+
+/* nav */
+.nav {
+	height:25px;
+	background:#013737;
+	border-bottom:1px #013737 dashed;
+	width:950px;
+	overflow:hidden;
+	margin-top:1px;
+}
+.nav_menu {
+	background:url(../../images/ybqj/nav_menu_bg.gif) no-repeat 0px 1px;
+	padding-left:56px;
+	width:620px;
+	float:left;
+	height:25px;
+	overflow:hidden;
+}
+.nav_menu ul {
+}
+.nav_menu ul li {
+	float:left;
+	background:url(../../images/ybqj/nav_menu_li_bg.gif) no-repeat right;
+	text-align:center;
+	width:47px;
+}
+.nav_menu ul li.nobg {
+	background:none;
+	width:75px;
+}
+.nav_menu ul li a:link , .nav_menu ul li a:visited {
+	color:#fffdff;
+	font-size:14px;
+	line-height:26px;
+}
+.nav_menu ul li a:hover {
+	color:#777777;
+}
+/* search */
+.search {
+	width:200px;
+	float:right;
+	background:#811a45 url(../../images/ybqj/search_bg.gif) no-repeat;
+	height:23px;
+	overflow:hidden;
+	color:#FFFFFF;
+	padding-left:74px;
+	line-height:22px;
+	font-size:12px;
+	padding-top:2px;
+}
+.search input {
+	vertical-align:top;
+}
+.search_form_text {
+	width:148px;
+	height:20px;
+	border:1px #a90159 solid;
+	margin:0px;
+	padding:0px;
+}
+.search_form_button {
+	width:25px;
+	height:20px;
+	border:none;
+	background:url(../../images/ybqj/search_form_button_bg.gif) no-repeat;
+	margin-left:5px;
+	color:#92004b;
+}
+/* nav_bottom */
+.nav_bottom {
+	height:51px;
+	overflow:hidden;
+	background:url(../../images/ybqj/nav_bottom_bg.gif) no-repeat;
+	padding-left:42px;
+	padding-top:19px;
+	overflow:hidden;
+}
+.nav_bottom_item {
+	width:227px;
+	background:url(../../images/ybqj/nav_bottom_item_bg.gif) right no-repeat;
+	float:left;
+}
+.nav_bottom_item_img {
+	width:87px;
+	height:35px;
+	float:left;
+}
+.nav_bottom_item ul {
+	float:right;
+	width:140px;
+}
+.nav_bottom_item ul li {
+	float:left;
+	width:70px;
+	height:20px;
+}
+.nav_bottom_item ul li a:link , .nav_bottom_item ul li a:visited {
+	color:#787878;
+}
+/* main */
+.main {
+	width:950px;
+	margin:0px auto;
+}
+
+/* banner */
+.banner {
+	width:950px;
+	height:370px;
+}
+/* index_businesses */
+.index_businesses {
+	width:950px;
+	overflow:hidden;
+	background:url(../../images/ybqj/index_businesses_bg.gif) repeat-x;
+	border-bottom:1px #f4d9de solid;
+}
+.index_businesses_title {
+	height:45px;
+	overflow:hidden;
+	background:url(../../images/ybqj/index_businesses_title_bg.gif) no-repeat;
+	text-align:right;
+	line-height:45px;
+	padding-right:10px;
+	margin-bottom:4px;
+}
+.index_businesses_l {
+	width:692px;
+	float:left;
+}
+.hot_businesses {
+	width:249px;
+	float:right;
+}
+.hot_businesses_title {
+	height:24px;
+	background:url(../../images/ybqj/hot_businesses_title_bg.gif) no-repeat;
+	color:#2c7b80;
+	font-size:12px;
+	font-weight:bold;
+	line-height:24px;
+	width:232px;
+	padding-left:17px;
+}
+.more {
+	float:right;
+	width:45px;
+}
+.more a:link , .more a:visited {
+	color:#777777;
+	font-size:9px;
+	font-weight:normal;
+}
+
+.businesses_imglist_title {
+	width:692px;
+	height:24px;
+	background:url(../../images/ybqj/businesses_imglist_title_bg.gif) repeat-x;
+}
+.businesses_imglist_title ul {
+	padding-left:12px;
+}
+.businesses_imglist_title ul li {
+	width:70px;
+	height:18px;
+	background:url(../../images/ybqj/businesses_imglist_title_li.gif) no-repeat;
+	float:left;
+	text-align:center;
+	padding-top:6px;
+	margin-right:5px;
+}
+.businesses_imglist_title ul li.active {
+	background:url(../../images/ybqj/businesses_imglist_title_li_active.gif) no-repeat;
+	color:#58949c;
+}
+.businesses_imglist_title ul li a:link , .businesses_imglist_title ul li a:visited {
+	color:#58949c;
+	font-weight:bold;
+}
+	
+.businesses_imglist_div {
+	padding-left:30px;
+	height:130px;
+	overflow:hidden;
+	width:662px;
+}
+.businesses_imglist_div ul {
+	display:none;
+}
+.businesses_imglist_div ul li {
+	width:145px;
+	height:125px;
+	background:url(../../images/ybqj/businesses_imglist_div_li.gif) no-repeat;
+	float:left;
+	margin-right:17px;
+	text-align:center;
+	padding-top:5px;
+}
+.businesses_imglist_div ul li p {
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.businesses_new{
+}
+.businesses_new_title {
+	height:24px;
+	background:url(../../images/ybqj/businesses_new_title_bg.gif) no-repeat;
+	padding-left:24px;
+	line-height:24px;
+	color:#58949c;
+	font-weight:bold;
+}
+.businesses_new ul {
+	padding-left:36px;
+}
+.businesses_new ul li {
+	width:308px;
+	float:left;
+	padding-left:20px;
+	height:26px;
+	overflow:hidden;
+}
+.businesses_new_1 {
+	background:url(../../images/ybqj/businesses_new_1_bg.gif) no-repeat;
+}
+.businesses_new_2 {
+	background:url(../../images/ybqj/businesses_new_2_bg.gif) no-repeat;
+}
+.businesses_new_3 {
+	background:url(../../images/ybqj/businesses_new_3_bg.gif) no-repeat;
+}
+.businesses_new_4 {
+	background:url(../../images/ybqj/businesses_new_4_bg.gif) no-repeat;
+}
+
+.hot_businesses ul {
+	width:220px;
+	height:208px;
+	overflow:hidden;
+	margin:0px auto;
+}
+.hot_businesses ul li {
+	height:26px;
+	line-height:26px;
+	background:url(../../images/ybqj/hot_businesses_li.gif) 0px 9px no-repeat;
+	padding-left:17px;
+	overflow:hidden;
+}
+.hot_businesses ul li.active {
+	background:url(../../images/ybqj/hot_businesses_li_active.gif) 0px 9px no-repeat;
+}
+
+/* index_fantion */
+.index_fantion {
+	width:950px;
+	overflow:hidden;
+	background:url(../../images/ybqj/index_businesses_bg.gif) repeat-x;
+	border-bottom:1px #f4d9de solid;
+}
+.index_fantion_title {
+	height:45px;
+	overflow:hidden;
+	background:url(../../images/ybqj/index_fantion_title_bg.gif) no-repeat;
+	text-align:right;
+	line-height:45px;
+	padding-right:10px;
+	margin-bottom:4px;
+}
+.index_fantion_l {
+	width:316px;
+	float:left;
+	margin-right:16px;
+}
+.index_fantion_m {
+	width:359px;
+	float:left;
+}
+.index_fantion_r {
+	width:249px;
+	float:right;
+}
+/* footer */
+.footer {
+	width:950px;
+	margin:0px auto;
+	height:300px;
+	overflow:hidden;
+	background:url(../../images/ybqj/footer_bg.gif) repeat-x;
+}
+.footer_ad {
+	height:70px;
+	overflow:hidden;
+	width:936px;
+	margin-top:27px;
+	padding-left:14px;
+}
+.footer_ad a:link , .footer_ad a:visited {
+	width:220px;
+	height:70px;
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding-right:14px;
+}
+.links {
+	margin-top:30px;
+}
+.img_links {
+	height:50px;
+	overflow:hidden;
+	width:936px;
+	padding-left:14px;
+}
+.img_links a:link , .img_links a:visited {
+	width:80px;
+	height:30px;
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding-right:13px;
+}
+.img_links a img {
+	width:78px;
+	height:28px;
+	border:1px #cbcbcb solid;
+}
+.text_links {
+	height:27px;
+	background:url(../../images/ybqj/text_links_bg.gif) 26px 0px no-repeat;
+	padding-left:94px;
+	padding-top:1px;
+}
+.footer_nav {
+	text-align:center;
+}
+.footer_nav p {
+	line-height:24px;
+	text-align:center;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script type="text/javascript" src="jquery/jquery126.js"></script>
+<style type="text/css" media="all">
+#menu{width: 480px;height: 80px;background-color: #f90;overflow: hidden; }
+#menu span{width: 119px; height: 80px; float: left; border-left: 1px solid #fff; }
+</style>
+</head>
+<body>
+    <div id="menu"><span>Item 1</span><span>Item 2</span><span>Item 3</span><span>Item 4</span></div>
+	<script type="text/javascript" language="javascript">
+    var currentItem = null; 
+	var undoTimerHodler = false;
+    $(document).ready(
+        function()
+        {
+            $('#menu span').bind('mouseover', doItem);//bind为每一个匹配元素的特定事件（像click）绑定一个事件处理器函数
+            $('#menu').bind('mouseout', undoItem);
+        }
+    );
+    function doItem()
+    {
+        if(undoTimerHodler){   
+			window.clearTimeout(undoTimerHodler);
+		}
+        if(currentItem) {
+            $(currentItem).animate({width: 100}, 200);
+        } 
+		else {
+            $('#menu span').not(this).animate({width: 100}, 200);
+        }
+        currentItem = this;
+        $(currentItem).animate({width: 170}, 200);
+    }
+    function undoItem()
+    {
+        undoTimerHodler = window.setTimeout(undoTimer, 100);
+    }
+    function undoTimer()
+    {
+        $('#menu span').animate({width: 119}, 200);
+        currentItem = null;
+    }
+    </script>
+</body>
+</html>

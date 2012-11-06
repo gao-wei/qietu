@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript" language="javascript" language="javascript" src="jquery/core.js"></script>
+<script type="text/javascript" language="javascript" src="jquery/selector.js"></script>
+<script type="text/javascript" language="javascript" src="jquery/event.js"></script>
+<script type="text/javascript" language="javascript" src="jquery/ajax.js"></script>
+<script type="text/javascript" language="javascript" src="jquery/fx.js"></script>
+<script type="text/javascript" language="javascript" src="i/iutil.js"></script>
+<script type="text/javascript" language="javascript" src="i/idrag.js"></script>
+<script type="text/javascript" language="javascript" src="i/accordion.js"></script>
+<script type="text/javascript" language="javascript" src="i/carousel.js"></script>
+<script type="text/javascript" language="javascript" src="i/fisheye.js"></script>
+<script type="text/javascript" language="javascript" src="i/iautocompleter.js"></script>
+<script type="text/javascript" language="javascript" src="i/icassistant.js"></script>
+<script type="text/javascript" language="javascript" src="i/iexpander.js"></script>
+<script type="text/javascript" language="javascript" src="i/imagebox.js"></script>
+<script type="text/javascript" language="javascript" src="i/iresizable.js"></script>
+<script type="text/javascript" language="javascript" src="i/iselect.js"></script>
+<script type="text/javascript" language="javascript" src="i/islider.js"></script>
+<script type="text/javascript" language="javascript" src="i/islideshow.js"></script>
+<script type="text/javascript" language="javascript" src="i/isortables.js"></script>
+<script type="text/javascript" language="javascript" src="i/ittabs.js"></script>
+<style type="text/css" media="all">
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #fff;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#myAccordion{
+	width: 400px;
+	border: 1px solid #6CAF00;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+#myAccordion h5{
+	line-height: 20px;
+	background-color: #80df20;
+	border-top: 2px solid #DAFF9F;
+	border-bottom: 2px solid #6CAF00;
+	padding: 0 10px;
+	font-weight: bold;
+	color: #fff;
+}
+#myAccordion div{
+	overflow: auto;
+}
+#myAccordion p{
+	margin: 16px 10px;
+}
+#myAccordion h5.myAccordionHover
+{
+	background-color: #90ef30;
+}
+#myAccordion h5.myAccordionActive
+{
+	background-color: #6CAF00;
+	border-top: 2px solid #80df20;
+	border-bottom: 2px solid #000;
+}
+</style>
+</head>
+
+<body>
+<div id="myAccordion">
+	<h5  class="someClass">Lorem ipsum dolor</h5>
+    <div>
+    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum odio urna, hendrerit ac, nonummy et, tempor commodo, eros. Etiam ac dui id lectus imperdiet euismod. In vitae est. Nunc quis lacus. Aenean convallis. Aliquam erat volutpat. Aliquam justo eros, tristique sit amet, fringilla et, bibendum ac, arcu. Nulla in lacus non lectus volutpat vehicula. Sed non magna imperdiet nisi pharetra ullamcorper. Nullam quis quam.</p>
+		<p>Ut quis massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean nunc ligula, egestas in, dictum a, porttitor in, pede. Curabitur blandit faucibus massa. Aliquam nonummy laoreet libero. Phasellus euismod erat eu risus. Ut placerat egestas risus. Donec nisl nibh, aliquam vel, porttitor non, condimentum quis, risus. Vestibulum eleifend vulputate lectus. Aliquam id turpis. Aliquam erat volutpat.</p>
+    </div>
+    <h5  class="someClass">Lorem ipsum dolor</h5>
+    <div>
+    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum odio urna, hendrerit ac, nonummy et, tempor commodo, eros. Etiam ac dui id lectus imperdiet euismod. In vitae est. Nunc quis lacus. Aenean convallis. Aliquam erat volutpat. Aliquam justo eros, tristique sit amet, fringilla et, bibendum ac, arcu. Nulla in lacus non lectus volutpat vehicula. Sed non magna imperdiet nisi pharetra ullamcorper. Nullam quis quam.</p>
+		<p>Ut quis massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean nunc ligula, egestas in, dictum a, porttitor in, pede. Curabitur blandit faucibus massa. Aliquam nonummy laoreet libero. Phasellus euismod erat eu risus. Ut placerat egestas risus. Donec nisl nibh, aliquam vel, porttitor non, condimentum quis, risus. Vestibulum eleifend vulputate lectus. Aliquam id turpis. Aliquam erat volutpat.</p>
+    </div>
+</div>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready( function(){
+		$('#myAccordion').Accordion( {
+			headerSelector	: 'h5',
+			panelSelector	: 'div',
+			activeClass		: 'myAccordionActive',
+			hoverClass		: 'myAccordionHover',
+			panelHeight		: 100,
+			speed			: 500
+		});
+	});
+</script>
+<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import url("global.css");
+/* index */
+/* flash */
+.flash {
+	width:644px;
+	height:228px;
+	background:#e0e2e1;
+	border:1px #d8d8d8 solid;
+	padding:6px;
+}
+.flash_l {
+	width:330px;
+	height:206px;
+	background:#fff;
+	padding:10px;
+	float:left;
+}
+.flash_r {
+	background:url(../images/flash_r_bg.gif) bottom repeat-x;
+	background-color:#ffffff;
+
+	float:right;
+	height:239px;
+	width:286px;
+	overflow:hidden;
+}
+.flash_r ul {
+	padding:15px;
+}
+.flash_r ul li {
+	line-height:25px;
+	height:25px;
+}
+
+.item_first {
+	height:75px;
+	overflow:hidden;
+	margin:0px 20px;
+	border-bottom:1px #a49a99 dashed;
+}
+.item_first_img {
+	width:69px;
+	height:69px;
+	overflow:hidden;
+	float:left;
+}
+.item_first_img img {
+	padding:1px;
+	border:1px #c5c1c0 solid;
+}
+.item_first_main {
+	width:200px;
+	float:right;
+	line-height:20px;
+}
+.item_first_main a {
+	color:#6d5a5c;
+}
+ul.item_list {
+	padding:5px 20px 5px 20px;
+}
+ul.item_list li {
+	line-height:22px;
+	height:22px;
+	background:url(../images/point_4.gif) 0px 7px no-repeat;
+	padding-left:10px;
+}
+
+.item_title {
+	height:31px;
+	background:url(../images/item_title_bg.gif) repeat-x;
+	width:654px;
+	margin:0px auto;
+	overflow:hidden;
+}
+.item_title ul {
+	width:279px;
+	float:left;
+	margin-top:2px;
+	padding-left:10px;
+}
+.item_title ul li {
+	border-left:1px #cfcfcf solid;
+	border-right:1px #cfcfcf solid;
+	height:19px;
+	padding-top:5px;
+	width:85px;
+	text-align:center;
+	background:url(../images/item_title_li_bg.gif) repeat-x;
+	float:left;
+	margin-right:6px;
+}
+.item_title ul li a:link , .item_title ul li a:visited {
+	color:#6b5b5b;
+	font-size:14px;
+}
+.item_title ul li a:hover {
+	text-decoration:none;
+}
+.item_title ul li.current {
+	border-left:1px #7b0909 solid;
+	border-right:1px #7b0909 solid;
+	height:19px;
+	padding-top:5px;
+	width:85px;
+	text-align:center;
+	background:url(../images/item_title_li_active_bg.gif) repeat-x;
+}
+.item_title ul li.current a:link , .item_title ul li.current a:visited {
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+.item_main_data {
+	display:none;
+	width:654px;
+	height:140px;
+	overflow:hidden;
+}
+.item_main_data ul {
+	margin:5px 20px;
+}
+.item_main_data ul li {
+	line-height:22px;
+	height:22px;
+	background:url(../images/point_4.gif) 0px 7px no-repeat;
+	padding-left:10px;
+	float:left;
+	width:285px;
+	overflow:hidden;
+	padding-right:10px;
+}

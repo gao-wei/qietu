@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="javascript/jquery.js"></script>
+</head>
+<body>
+	<div id="body">
+        <div class="index_top">
+        	<div class="header">
+                <div class="logo"><a href="./"><img alt="" src="images/logo.jpg" width="164" height="37" /></a></div>
+                <div class="search">
+                    <form name="myform" method="post" action="">
+                        <input type="text" name="keyword" class="search_input" id="keyword" />
+                        <input type="button" name="dosubmit" value="搜索" class="search_button" />
+                    </form>
+                </div>
+                <div class="quick_link">
+                    <a href="#">ENGLISH</a> | 
+                    <a href="#">联系我们</a> | 
+                    <a href="#">网点地图</a> | 
+                    <a href="#">企业邮箱</a>
+                </div>
+                <div class="clear"></div>
+        	</div>
+            <div class="nav">
+            	<ul>
+                	<li id="nav_index_1" onmousemove="select_index_nav(1);"><span><a href="./">首页</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                	<li id="nav_index_2" onmousemove="select_index_nav(2);"><span><a href="estate-1.html">地产开发</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_3" onmousemove="select_index_nav(3);"><span><a href="collection.html">龙 湾 汇</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_4" onmousemove="select_index_nav(4);"><span><a href="#">龙湾社区</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_5" onmousemove="select_index_nav(5);"><span><a href="#">龙湾物业</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_6" onmousemove="select_index_nav(6);"><span><a href="#">龙湾商业</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_7" onmousemove="select_index_nav(7);"><span><a href="news.html">新闻中心</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                    <li id="nav_index_8" onmousemove="select_index_nav(8);" class="last"><span><a href="about-1.html">关于龙湾</a></span><a href="#"><img alt="" src="images/nav_li_a_bg.gif" /></a><div class="clear"></div></li>
+                </ul>
+            </div>
+            <div class="nav_index_bottom">
+            	<div id="nav_index_bottom_1" class="nav_index_bottom_item">
+                </div>
+            	<div id="nav_index_bottom_2" class="nav_index_bottom_item">
+                	<ul>
+                    	<li><a href="#">项目展示</a></li>
+                        <li><a href="#">楼盘导购</a></li>
+                        <li><a href="#">北京龙湾</a></li>
+                        <li><a href="#">天津龙湾</a></li>
+                        <li><a href="#">福建龙湾</a></li>
+                    </ul>
+                </div>
+                <div id="nav_index_bottom_3" class="nav_index_bottom_item">
+                </div>
+                <div id="nav_index_bottom_4" class="nav_index_bottom_item">
+                </div>
+                <div id="nav_index_bottom_5" class="nav_index_bottom_item">
+                	<ul>
+                    	<li><a href="#">北京物业</a></li>
+                        <li><a href="#">天津物业</a></li>
+                    </ul>
+                </div>
+                <div id="nav_index_bottom_6" class="nav_index_bottom_item">
+                </div>
+                <div id="nav_index_bottom_7" class="nav_index_bottom_item">
+                	<ul>
+                    	<li><a href="#">龙湾新闻</a></li>
+                        <li><a href="#">行业新闻</a></li>
+                    </ul>
+                </div>
+                <div id="nav_index_bottom_8" class="nav_index_bottom_item">
+                	<ul>
+                    	<li><a href="#">龙湾地产简介</a></li>
+                        <li><a href="#">董事长致词</a></li>
+                        <li><a href="#">组织架构</a></li>
+                        <li><a href="#">慈善事业</a></li>
+                        <li><a href="#">集团链接</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function select_index_nav(id)
+                {
+					if ($.browser.msie) {
+						$('#nav_index_bottom_'+id).css({'opacity':'0.7'});
+					}
+					$('#nav_index_bottom_'+id).show(600);
+                    $('#nav_index_bottom_'+id).siblings().css("display","none");
+                }
+            </script>
+            <div class="index_banner_nav"></div>
+            <div class="index_banner_nav_1"><a href="#"><img alt="" src="images/index_banner_nav_1.gif" /></a></div>
+            <div class="index_banner_nav_2"><a href="#"><img alt="" src="images/index_banner_nav_2.gif" /></a></div>
+            <div class="index_banner_nav_3"><a href="#"><img alt="" src="images/index_banner_nav_3.gif" /></a></div>
+            
+        	<div id="index_banner" class="index_banner">
+            	<ul>
+                	<li class="current"><img alt="" src="images/index_banner_1.jpg" /></li>
+                    <li><img alt="" src="images/index_banner_2.jpg" /></li>
+                    <li><img alt="" src="images/index_banner_3.jpg" /></li>
+            	</ul>
+            </div>
+            
+            <script type="text/javascript">
+				function slideSwitch() {
+					var $current = $("#index_banner li.current");	
+					// 判断div.current个数为0的时候 $current的取值
+					if ($current.length == 0) $current = $("#index_banner li:last");
+					// 判断div.current存在时则匹配$current.next(),否则转到第一个div
+					var $next =  $current.next().length ? $current.next() : $("#index_banner li:first");
+					$current.addClass('prev');
+					$next.css({opacity: 0.0}).addClass("current").animate({opacity: 1.0}, 3000, function() {
+						//因为原理是层叠,删除类,让z-index的值只放在轮转到的div.current,从而最前端显示
+						$current.removeClass("current prev");
+					});
+				}
+				$(function() {
+					setInterval( "slideSwitch()", 3000 ); 
+				});
+			</script>
+        </div>
+        <div class="main">
+        	<div class="mainLeft">
+                <div class="news">
+                	<h3>龙湾新闻 <i>NEWS</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img alt="" src="images/more.gif" /></a><div class="clear"></div></h3>
+                    <div class="news_img"><img alt="" src="images/index_news.jpg" /></div>
+                    <div class="spaceline"></div>
+                    <div class="spaceline"></div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                    <div class="news_list">
+                    	<h2><a href="#">2010-08-03地产新闻标题</a></h2>
+                        <p><a href="#">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</a></p>
+                    </div>
+                </div>
+                <div class="spaceline"></div>
+                <div class="weather">
+                	<div class="weather_list"><img alt="" src="images/weather_1.jpg" /></div>
+                    <div class="weather_list"><img alt="" src="images/weather_2.jpg" /></div>
+                    <div class="weather_list"><img alt="" src="images/weather_3.jpg" /></div>
+                </div>
+            </div>
+            <div class="mainRight">
+            	<h3 class="index"><span><a href="#">地产开发 <i>Real Estate Development</i></a></span><div class="clear"></div></h3>
+                <div class="index_build">
+                	<div class="index_build_l">
+                    	<div class="spaceline"></div>
+                        <div class="index_build_l_img"><a href="#"><img alt="" src="images/index_build_1.jpg" /></a></div>
+                        <div class="spaceline"></div>
+                        <h3><span><a href="#">产品体验</a></span><a href="#"><img alt="" src="images/more_r.gif" /></a><div class="clear"></div></h3>
+                        <p>相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</p>
+                        <h3><span><a href="#">楼盘导购</a></span><a href="#"><img alt="" src="images/more_r.gif" /></a><div class="clear"></div></h3>
+                        <p>相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息</p>
+                    </div>
+                    <div class="index_build_r">
+                    	<div class="spaceline"></div>
+                    	<h3><span><a href="#">产品体验</a></span><a href="#"><img alt="" src="images/more_r.gif" /></a><div class="clear"></div></h3>
+                    	<p>相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相<br /><br />相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相<br /><br />相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相<br /><br />相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相<br /><br />相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="spaceline"></div>
+                <h3 class="index"><span><a href="#">龙湾物业 <i>Property Of Longwan</i></a></span><div class="clear"></div></h3>
+                <div class="property">
+                	<div class="spaceline"></div>
+                	<div class="property_img"><a href="#"><img alt="" src="images/property_img.jpg" /></a></div>
+                    <div class="property_p">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相</div>
+                    <div class="spaceline"></div>
+                   	<p>相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相新闻信息相<br /><br />相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相 <a href="#"><img alt="" src="images/more.gif" /></a></p>
+                </div>
+                <div class="spaceline"></div>
+                <h3 class="index"><span><a href="#">龙湾商业 <i>Business Of Longwan</i></a></span><div class="clear"></div></h3>
+                <div class="business">
+                <div class="spaceline"></div>
+                    <div class="business_img"><a href="#"><img alt="" src="images/business_img.jpg" /></a></div>
+                    <div class="business_p">相关内容新闻信息相关内容新闻信息相关内容新闻新闻信息相关内容新闻信息相相关内容新闻信息相关内容新闻信<br /><br />闻信息相关内容新闻信息相相关内容新闻关内容新闻信<br /><br />闻信息相关内容新闻信息相相关内容新闻关内容新闻信 <a href="#"><img alt="" src="images/more.gif" /></div>
+                    <div class="spaceline"></div>
+                    <div class="business_list">
+                    	<ul>
+                        	<li><a href="#"><img alt="" src="images/business_list_1.jpg" /></a></li>
+                            <li><a href="#"><img alt="" src="images/business_list_2.jpg" /></a></li>
+                            <li><a href="#"><img alt="" src="images/business_list_3.jpg" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spaceline"></div
+            ></div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+        	<div class="footer_nav">
+            	<a href="#" class="beian">京ICP备05039084号</a>
+                <a href="#">联系我们</a> 
+                <a href="#">企业邮箱</a> 
+                <a href="#">企业OA</a> 
+                <a href="#">协议条款</a> 
+                <a href="#">法律声明</a> 
+                <a href="#">网站链接</a> 
+                <a href="#">招聘信息</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bottom_logo"><a href="./"><img alt="" src="images/bottom_logo.jpg" width="159" height="24" /></a></div>
+    </div>
+</body>
+</html>

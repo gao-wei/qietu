@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dependencies - Interface elements for jQuery</title>
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<script type="text/javascript" src="interface/interface.js"></script>
+<style type="text/css" media="all">
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	min-height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: none;
+	z-index: 1000;
+}
+#scripts {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -250px;
+	background-color: #f0f0f0;
+}
+#scripts a{ 
+	position: absolute;
+	display: block;
+	border: 1px solid #FF8A00;
+	padding: 2px;
+	color: #000;
+	text-decoration: none;
+	background-color: #FFE9CF;
+	font-size: 10px;
+	width: 120px;
+}
+</style>
+<script type="text/javascript">
+var animated = [];
+var dependencies = {
+	accordion : ['iutil'],
+	carousel : ['iutil'],
+	fisheye : ['iutil'],
+	iautocompleter : ['iutil'],
+	iautoscroller : ['iutil'],
+	icassitant : ['iutil'],
+	idrag : ['iutil'],
+	idrop : ['iutil', 'idrag'],
+	ifxblind : ['iutil', 'ifx'],
+	ifxbounce : ['iutil', 'ifx'],
+	ifxdrop : ['iutil', 'ifx'],
+	ifxfold : ['iutil', 'ifx'],
+	ifxhighlight : ['iutil', 'ifx'],
+	ifxopenclose : ['iutil', 'ifx'],
+	ifxpulsate : ['iutil', 'ifx'],
+	ifxscale : ['iutil', 'ifx'],
+	ifxscrolto : ['iutil', 'ifx'],
+	ifxshake : ['iutil', 'ifx'],
+	ifxslide : ['iutil', 'ifx'],
+	ifxtransfer : ['iutil', 'ifx'],
+	imagebox : ['iutil'],
+	iresizable : ['iutil'],
+	iselect : ['iutil'],
+	islider : ['iutil', 'idrag', 'idrop'],
+	islideshow : ['iutil'],
+	isortables : ['iutil', 'idrag', 'idrop'],
+	itooltip : ['iutil', 'ifx']
+};
+
+$(document).ready(function(){
+	$('#scripts a')
+		.each(function(nr){
+			var row = parseInt(nr/3);
+			var col = nr%3;
+			var y = 40 + row * 30;
+			var x = 50 + col * 140; 
+			$(this).css({
+				top: y + 'px',
+				left: x+ 'px'
+			});
+			this.origX = x;
+			this.origY = y;
+		})
+		.bind('click', showDependencies);
+	$('#overlay').css('opacity', 0.8).bind('click', hideDependencies);
+});
+
+var showDependencies = function (e) {
+	var id = $(this).attr('id');
+	if (dependencies[id]) {
+		$('#overlay').show();
+		animated = $.extend([], dependencies[id]);
+		animated.push(id);
+		$.each(animated, function(nr, val){
+			$('#' + val)
+				.css('zIndex', 1001 + nr)
+				.animate({
+					top: 50 + nr * 40,
+					left: 180
+				}, 500);
+		});
+	}
+	this.blur();
+	return false;
+}; 
+var hideDependencies = function (e) {
+	$.each(animated, function(nr, val){
+		var el = document.getElementById(val);
+		$(el).css('zIndex', nr).stop().animate({top: el.origY, left: el.origX}, 500);
+	});
+	$(this).hide();
+	this.blur();
+	return false;
+}; 
+</script>
+</head>
+<body>
+
+<div id="scripts">
+	<a href="#" id="accordion">accordion.js</a>
+	<a href="#" id="carousel">carousel.js</a>
+	<a href="#" id="easing">easing.js</a>
+	<a href="#" id="fisheye">fisheye.js</a>
+	<a href="#" id="iautocompleter">iautocompleter.js</a>
+	<a href="#" id="iautoscroller">iautoscroller.js</a>
+	<a href="#" id="icassestant">icassestant.js</a>
+	<a href="#" id="idrag">idrag.js</a>
+	<a href="#" id="idrop">idrop.js</a>
+	<a href="#" id="iexpander">iexpander.js</a>
+	<a href="#" id="ifx">ifx.js</a>
+	<a href="#" id="ifxblind">ifxblind.js</a>
+	<a href="#" id="ifxbounce">ifxbounce.js</a>
+	<a href="#" id="ifxdrop">ifxdrop.js</a>
+	<a href="#" id="ifxfold">ifxfold.js</a>
+	<a href="#" id="ifxhighlight">ifxhighlight.js</a>
+	<a href="#" id="ifxopenclose">ifxopenclose.js</a>
+	<a href="#" id="ifxpulsate">ifxpulsate.js</a>
+	<a href="#" id="ifxscale">ifxscale.js</a>
+	<a href="#" id="ifxscrollto">ifxscrollto.js</a>
+	<a href="#" id="ifxshake">ifxshake.js</a>
+	<a href="#" id="ifxslide">ifxslide.js</a>
+	<a href="#" id="ifxtransfer">ifxtransfer.js</a>
+	<a href="#" id="imagebox">imagebox.js</a>
+	<a href="#" id="iresizable">iresizable.js</a>
+	<a href="#" id="iselect">iselect.js</a>
+	<a href="#" id="islider">islider.js</a>
+	<a href="#" id="islideshow">islideshow.js</a>
+	<a href="#" id="isortables">isortables.js</a>
+	<a href="#" id="itooltip">itooltip.js</a>
+	<a href="#" id="ittabs">ittabs.js</a>
+	<a href="#" id="iutil">iutil.js</a>
+	<div id="overlay">&nbsp;</div>
+</div>
+</body>
+</html>

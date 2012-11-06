@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import url("global1.css");
+/* index */
+.main_left {
+	width:710px;
+	float:left;
+}
+.main_left_l {
+	width:272px;
+	float:left;
+}
+.main_left_r {
+	width:428px;
+	float:right;
+}
+
+.main_right {
+	width:260px;
+	float:right;
+}
+
+
+.item_title {
+	height:26px;
+	overflow:hidden;
+	background:url(../images/item_title_bg.gif) repeat-x;
+	padding:0px 10px;
+}
+.item_title a:link , .item_title a:visited {
+	line-height:26px;
+	font-weight:bold;
+	color:#3d88c2;
+}
+.item_title span.more {
+	float:right;
+}
+.item_title span.more a:link , .item_title span.more a:visited {
+	font-weight:normal;
+	color:#555;
+}
+
+
+.item_270 {
+	width:270px;
+	overflow:hidden;
+	border:1px #d7d7d7 solid;
+}
+.item_270 ul {
+	padding:0px 15px;
+}
+.item_270 ul li {
+	height:25px;
+	line-height:25px;
+	background:url(../images/point_2.gif) no-repeat 0px 10px;
+	padding-left:10px;
+	overflow:hidden;
+	color:#0066b3;
+}
+.item_270 ul li a:link , .item_270 ul li a:visited {
+	color:#777777;
+}
+.item_270 ul li a:hover {
+	color:#999;
+}
+
+
+.item_426 {
+	width:426px;
+	overflow:hidden;
+	border:1px #d7d7d7 solid;
+}
+.item_426 ul {
+	padding:0px 15px;
+}
+.item_426 ul li {
+	height:25px;
+	line-height:25px;
+	background:url(../images/point_2.gif) no-repeat 0px 10px;
+	padding-left:10px;
+	overflow:hidden;
+	color:#0066b3;
+}
+.item_426 ul li a:link , .item_426 ul li a:visited {
+	color:#777777;
+}
+.item_426 ul li a:hover {
+	color:#999;
+}
+.item_426_l {
+	width:250px;
+	float:left;
+}
+.item_426_r {
+	width:150px;
+	float:right;
+	border:1px #d7d7d7 solid;
+	padding:1px;
+	margin-right:10px;
+}
+.item_426_r img {
+	width:150px;
+	height:170px;
+}
+
+
+.item_258 {
+	width:258px;
+	overflow:hidden;
+	border:1px #d7d7d7 solid;
+}
+.item_258 ul {
+	padding:0px 15px;
+}
+.item_258 ul li {
+	height:25px;
+	line-height:25px;
+	background:url(../images/point_2.gif) no-repeat 0px 10px;
+	padding-left:10px;
+	overflow:hidden;
+	color:#0066b3;
+}
+.item_258 ul li a:link , .item_258 ul li a:visited {
+	color:#777777;
+}
+.item_258 ul li a:link span, .item_258 ul li a:visited span{
+	color:#0066b3;
+}
+.item_258 ul li a:hover {
+	color:#999;
+}
+
+.index_flash {
+	height:240px;
+	width:270px;
+	border:1px #d7d7d7 solid;
+	overflow:hidden;
+	position:relative;
+}
+.index_flash_img {
+	height:210px;
+	width:270px;
+	overflow:hidden;
+}
+.index_flash_bottom {
+	height:29px;
+	line-height:29px;
+	text-align:center;
+	background:#f0f0f0;
+	border-top:1px #d7d7d7 solid;
+}
+.index_flash_bottom ul {
+}
+.index_flash_bottom ul li {
+	display:none;
+	height:29px;
+	line-height:29px;
+	overflow:hidden;
+	text-align:center;
+	font-weight:bold;
+	color:#dc2014;
+}
+.index_flash_bottom ul li.active {
+	display:block;
+}
+.index_flash_bottom ul li a:link , .index_flash_bottom ul li a:visited {
+	color:#dc2014;
+}
+.index_flash_bottom ul li a.active:link , .index_flash_bottom ul li a.active:visited {
+	color:#dc2014;
+}
+.index_flash_bottom ul li a:hover {
+	color:#d45e54;
+}
+.index_flash_button {
+	position:absolute;
+	z-index:99;
+	height:17px;
+	right:0px;
+	bottom:31px;
+}
+.index_flash_button ul {
+	height:17px;
+	overflow:hidden;
+}
+.index_flash_button ul li {
+	line-height:17px;
+	height:17px;
+	overflow:hidden;
+	text-align:center;
+	color:#ffffff;
+	font-size:12px;
+	background:#000000;
+	width:21px;
+	float:left;
+	margin-left:1px;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+.index_flash_button ul li.active {
+	background:#cd2000;
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+
+.index_toutiao {
+	height:240px;
+	width:426px;
+	border:1px #d7d7d7 solid;
+}
+.index_toutiao a:link , .index_toutiao a:visited {
+	color:#555555;
+}
+.index_toutiao a:hover  {
+	color:#999;
+}
+.index_toutiao h1 {
+	height:35px;
+	padding-top:15px;
+	text-align:center;
+	font-size:24px;
+	color:#3d87c1;
+	overflow:hidden;
+}
+.index_toutiao h1 a:link , .index_toutiao h1 a:visited {
+	color:#3d87c1;
+}
+.index_toutiao p {
+	line-height:16px;
+	height:48px;
+	overflow:hidden;
+	padding:0px 12px;
+	text-indent:2em;
+}
+.index_toutiao ul {
+	padding:15px 12px 0px 12px;
+	margin:15px 1px 0px 1px;
+	border-top:1px #d7d7d7 dashed;
+}
+.index_toutiao ul li {
+	height:25px;
+	line-height:25px;
+	background:url(../images/point_2.gif) no-repeat 0px 10px;
+	padding-left:10px;
+	overflow:hidden;
+	color:#555555;
+}
+.index_toutiao ul li span {
+	float:right;
+}

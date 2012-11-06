@@ -1,0 +1,78 @@
+div#mainmenu{
+ margin-left:75px;height:39px;  float:left;
+}
+div#mainmenu ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#mainmenu ul li{
+	 float:left;  text-align:center; position:relative
+}
+div#mainmenu ul li a{color:#fff;background:url(../images/menu_bj.jpg) repeat-x;height:39px; line-height:39px;width:80px;display: block;}
+div#mainmenu ul li a:hover{background:url(../images/menu_h_bj.jpg) no-repeat; display:block;}
+div#mainmenu ul li a.open{background:url(../images/menu_h_bj.jpg) no-repeat; display:block;}
+
+.downarrowclass,.rightarrowclass{
+position:inherit;
+top: 0px;
+right: 0px;
+display:none;
+}
+/*1st sub level menu*/
+div#mainmenu ul li ul
+{
+    z-index:1111111;
+    background:#fff;
+    
+    top:0px;
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+div#mainmenu ul li ul li{
+display: list-item;border:0px
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+div#mainmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+div#mainmenu li ul li a{
+font-size:12px;
+text-align:center;
+width: 80px;
+height:32px;
+line-height:32px;
+background:#5c5c5c;
+color:#fff;
+}
+
+div#mainmenu li ul li a:visited{
+font-size:12px;
+text-align:center;
+width: 80px;
+height:32px;
+line-height:32px;
+background:#FFFFFF;
+text-decoration:none;
+border:1px solid #b0bac3;
+color:#333333;
+}
+
+div#mainmenu li ul li a:hover{
+width: 80px;
+height:32px;
+line-height:32px;
+background:#888888;
+text-decoration:none;
+color:#fff;
+}

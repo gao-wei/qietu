@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/about.css" />
+<script type="text/javascript" src="javascript/jquery.js"></script>
+</head>
+<body>
+	<div id="body">
+    	<div class="header">
+        	<div class="logo"><a href="./"><img alt="" src="images/logo.jpg" width="164" height="37" /></a></div>
+            <div class="search">
+            	<form name="myform" method="post" action="">
+                    <input type="text" name="keyword" class="search_input" id="keyword" />
+                    <input type="button" name="dosubmit" value="搜索" class="search_button" />
+                </form>
+            </div>
+            <div class="quick_link">
+            	<a href="#">ENGLISH</a> | 
+                <a href="#">联系我们</a> | 
+                <a href="#">网点地图</a> | 
+                <a href="#">企业邮箱</a>
+            </div>
+            <div class="clear"></div>
+            <div class="nav">
+            	<ul>
+                	<li id="nav_1" onmousemove="select_nav(1);"><a href="./">首 页</a></li>
+                	<li id="nav_2" onmousemove="select_nav(2);"><a href="estate-1.html">地产开发</a></li>
+                    <li id="nav_3" onmousemove="select_nav(3);"><a href="collection.html">龙 湾 汇</a></li>
+                    <li id="nav_4" onmousemove="select_nav(4);"><a href="#">龙湾社区</a></li>
+                    <li id="nav_5" onmousemove="select_nav(5);"><a href="#">龙湾物业</a></li>
+                    <li id="nav_6" onmousemove="select_nav(6);"><a href="#">龙湾商业</a></li>
+                    <li id="nav_7" onmousemove="select_nav(7);"><a href="news.html">新闻中心</a></li>
+                    <li id="nav_8" onmousemove="select_nav(8);" class="last"><a href="about-1.html">关于龙湾</a></li>
+                </ul>
+            </div>
+            <div class="nav_bottom">
+            	<div id="nav_bottom_1" class="nav_bottom_item">
+                </div>
+            	<div id="nav_bottom_2" class="nav_bottom_item">
+                	<ul>
+                    	<li><a href="#">项目展示</a></li>
+                        <li><a href="#">楼盘导购</a></li>
+                        <li><a href="#">北京龙湾</a></li>
+                        <li><a href="#">天津龙湾</a></li>
+                        <li><a href="#">福建龙湾</a></li>
+                    </ul>
+                </div>
+                <div id="nav_bottom_3" class="nav_bottom_item">
+                </div>
+                <div id="nav_bottom_4" class="nav_bottom_item">
+                </div>
+                <div id="nav_bottom_5" class="nav_bottom_item">
+                	<ul>
+                    	<li><a href="#">北京物业</a></li>
+                        <li><a href="#">天津物业</a></li>
+                    </ul>
+                </div>
+                <div id="nav_bottom_6" class="nav_bottom_item">
+                </div>
+                <div id="nav_bottom_7" class="nav_bottom_item">
+                	<ul>
+                    	<li><a href="#">龙湾新闻</a></li>
+                        <li><a href="#">行业新闻</a></li>
+                    </ul>
+                </div>
+                <div id="nav_bottom_8" class="nav_bottom_item">
+                	<ul>
+                    	<li><a href="#">龙湾地产简介</a></li>
+                        <li><a href="#">董事长致词</a></li>
+                        <li><a href="#">组织架构</a></li>
+                        <li><a href="#">慈善事业</a></li>
+                        <li><a href="#">集团链接</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function select_nav(id)
+                {
+					if ($.browser.msie) {
+						$('#nav_bottom_'+id).css({'opacity':'0.7'});
+					}
+					$('#nav_bottom_'+id).show(600);
+                    $('#nav_bottom_'+id).siblings().css("display","none");
+                }
+            </script>
+        </div>
+        <div class="spaceline"></div>
+        <div class="main">
+        	<div class="estate_banner"><img alt="" src="images/estate_banner.jpg" width="860" height="190" /></div>
+            <div class="mainLeft">
+            	<div class="menu">
+                	<h3>关于龙湾</h3>
+                	<ul>
+                    	<li><a href="about-1.html">龙湾地产简介</a></li>
+                        <li class="active"><a href="about-2.html">董事长致词</a></li>
+                        <li><a href="#">组织机构</a></li>
+                        <li><a href="about-3.html">慈善事业</a></li>
+                        <li><a href="#">集团链接</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainRight">
+            	<h3 class="about">董事长致词</h3>
+                <div class="ceo">
+                    <p class="width_380">“人的观念会不断被外界的新信息冲击和刷新，就是说，总会有别人跑在你前面，我们应该看得更多些，眼界更高些。所以我希望不仅是我们自身要保持一个有远见的视野和与时俱进的状态，更能让客户始终处于一个相对的优势状态。”—-是针对龙湾集团旗下教育产业、医药产业还是地产产业所面对的客户。<br />作为一家大型集团化私营企业，龙湾集团在当今极具挑战的经济环境下，稳步发展着多元化的经营路径，用于投入，精于实现，在企业管理中，尊重人的价值，把人才是企业的根本作为用人理念，把培养人才作</p>
+                    <p style="text-indent:0em;">为企业的责任，培养一支强大的团队，在地产、教育、医药三个领域中均取得了较好的成绩。</p>
+                    <div class="clear"></div>
+                    <p>我作为集团的CEO，随着与各行业客户的接触层面越来越广，对集团的发展方向就越来越清晰，我将它称之为一个目标——“要打造真正意义上的信誉品牌、良心品牌！”，因为很多客户对我们表现出的信任与认同，让我觉得这应该就是我们的思想根源。这个目标现在已经演变成龙湾集团的目标，最终形成了集团发展的一个总的纲领基础——我们越来越强的意识到品牌社会则仍的重要，所以，怀着一颗感恩的心回报社会，一直将慈善作为事业而努力着，在公司成立至今已向社会捐助6105万元，并建立希望小学30所。</p>
+                    <p>任重道远，我们愿创造更多的美好，与更多的人一起分享。</p>
+                    <p style="text-align:right;">——蓝青</p>
+                </div>               
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+        	<div class="footer_nav">
+            	<a href="#" class="beian">京ICP备05039084号</a>
+                <a href="#">联系我们</a> 
+                <a href="#">企业邮箱</a> 
+                <a href="#">企业OA</a> 
+                <a href="#">协议条款</a> 
+                <a href="#">法律声明</a> 
+                <a href="#">网站链接</a> 
+                <a href="#">招聘信息</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="bottom_logo"><a href="./"><img alt="" src="images/bottom_logo.jpg" width="159" height="24" /></a></div>
+    </div>
+</body>
+</html>

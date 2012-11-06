@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--注意：禁制更改参数名称，否则不能读入（参数名称区分大小写，规定使用小写英文字母）。-->
+<magicplayer>
+	<album>
+		<video url="http://localhost/m1/system/20091201075307506.flv" title="MagicPlayer" />
+	</album>
+</magicplayer>

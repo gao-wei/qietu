@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品中心</title>
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/pngfix.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.cycle.all.latest.js"></script>
+</head>
+
+<body>
+	<div class="top">
+    	<div class="header_top">
+        	<div class="logo"><a href="./" title="" target="_blank"><img alt="" src="images/logo.png" width="111" height="37" onload="fixPNG(this)" /></a></div>
+            <div class="top_search">
+            	<form name="top_search_form">
+                	<input type="text" class="top_search_form_text" value="Search now" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="top_search_form_button" />
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+    	<div class="product_menu">
+        	<div class="product_menu_list">
+            	<div class="product_menu_list_title"><img src="images/product_menu_list_title.png" height="81" width="146" onload="fixPNG(this)" /></div>
+                <div class="product_menu_list_item">
+                	<p id="product_menu_head_1" class="product_menu_head">男装</p>  
+                    <div class="product_menu_body">  
+                        <a href="./">冲锋衣</a>
+                        <a href="./">抓绒衣</a>
+                        <a href="./">冲锋裤</a>
+                        <a href="./">速干衣</a>
+                        <a href="./">滑雪服</a>
+                        <a href="./">羽绒服</a>
+                        <a href="./">T恤</a>
+                        <a href="./">棉服</a>
+                        <a href="./">休闲裤</a>  
+                    </div>  
+                    <p id="product_menu_head_2" class="product_menu_head">女装</p>  
+                    <div class="product_menu_body">  
+                        <a href="./">冲锋衣</a>
+                        <a href="./">抓绒衣</a>
+                        <a href="./">冲锋裤</a>
+                        <a href="./">速干衣</a>
+                        <a href="./">滑雪服</a>
+                        <a href="./">羽绒服</a>
+                        <a href="./">T恤</a>
+                        <a href="./">棉服</a>
+                        <a href="./">休闲裤</a> 
+                    </div>  
+                    <p id="product_menu_head_3" class="product_menu_head">装备</p>  
+                    <div class="product_menu_body">  
+                       <a href="./">冲锋衣</a>
+                        <a href="./">抓绒衣</a>
+                        <a href="./">冲锋裤</a>
+                        <a href="./">速干衣</a>
+                        <a href="./">滑雪服</a>
+                        <a href="./">羽绒服</a>
+                        <a href="./">T恤</a>
+                        <a href="./">棉服</a>
+                        <a href="./">休闲裤</a>
+                    </div>  
+                    <p id="product_menu_head_4" class="product_menu_head">其他</p>  
+                    <div class="product_menu_body">  
+                       <a href="./">冲锋衣</a>
+                        <a href="./">抓绒衣</a>
+                        <a href="./">冲锋裤</a>
+                        <a href="./">速干衣</a>
+                        <a href="./">滑雪服</a>
+                        <a href="./">羽绒服</a>
+                        <a href="./">T恤</a>
+                        <a href="./">棉服</a>
+                        <a href="./">休闲裤</a>
+                    </div>    
+                </div>
+                <script type="text/javascript">  
+				$(function(){  
+					$(".product_menu_list_item p.product_menu_head").click(function()  
+					{  
+						$(this).next("div.product_menu_body").slideToggle(300).siblings("div.product_menu_body").slideUp("slow");             
+					});    
+				});  
+				$("#product_menu_head_1").next("div.product_menu_body").slideToggle(300).siblings("div.product_menu_body").slideUp("slow"); 
+				</script>  
+                <div class="product_menu_list_bottom"><img src="images/product_menu_list_bottom.png" height="51" width="146" onload="fixPNG(this)" /></div>
+            </div>
+            <div class="index_menu" style="height:210px;">
+                <ul>
+                	<li><a href="./about.html" target="_blank" title="">关于我们</a></li>
+                    <li><a href="./" target="_blank" title="">营销网络</a></li>
+                    <li><a href="./" target="_blank" title="">招商加盟</a></li>
+                    <li><a href="./" target="_blank" title="">新闻活动</a></li>
+                    <li><a href="./" target="_blank" title="">人力资源</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="product_content">
+        	<div class="product_content_title">
+            	<div class="product_content_title_search">
+                	<form name="product_search_form" action="" method="post">
+                    <div class="product_content_title_search_selectbox">
+                        <div class="selectBox">
+                            <a href="javascript:void(0);" id="aa">请选择类别</a><p>
+                            <a href="javascript:void(0)" class="current" value="please">请选择类别</a>
+                            <a href="javascript:void(0)" value="dc">数码相机</a>
+                            <a href="javascript:void(0)" value="lcd">液晶显示器</a>
+                            <a href="javascript:void(0)" value="mobile">智能手机</a>
+                            <a href="javascript:void(0)" value="oven">微波炉</a>
+                            </p><input type="hidden" name="category" id="category" value="no" />
+                        </div>
+                        <input type="button" onclick="alert($('#category').val());" value="取值" />
+                    </div>
+                    <div class="product_content_title_search_keyword">
+                    	<input type="text" name="keyword" value="Search Now" />
+                    </div>
+                    </form>
+                </div>
+                <div class="weibo" style="float:right; height:44px; margin-top:16px;"><a target="_blank" title="" href="./"><img width="202" height="44" onload="fixPNG(this)" src="images/weibo_2.png" alt=""></a></div>
+                <div class="clear"></div>
+            </div>
+            <div class="spaceline"></div>
+            <div class="product_content_list">
+            	<div class="product_content_list_first">
+                	<a href="./" target="_blank"><img alt="" src="images/product_content_list_first.jpg" height="223" width="799" /></a>
+                </div>
+                <ul class="product_content_list_item">
+                	<li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+                    <li><a href="./product_show.html" target="_blank"><div><img alt="" src="images/product_content_list_1.jpg" height="143" width="177" /></div><p>ALPHA SL PULLOVER</p></a></li>
+            	</ul>
+                <div class="spaceline"></div>
+                <div class="spaceline"></div>
+                <div class="spaceline"></div>
+                <div class="pages">
+                    <a href="./" target="_blank" class="prev">PREV</a>
+                    <a href="./" target="_blank">1</a>
+                    <a href="./" target="_blank" class="active">2</a>
+                    <a href="./" target="_blank">3</a>
+                    <a href="./" target="_blank">4</a>
+                    <a href="./" target="_blank">5</a>
+                    <a href="./" target="_blank">6</a>
+                    <a href="./" target="_blank">7</a>
+                    <a href="./" target="_blank">8</a>
+                    <a href="./" target="_blank">9</a>
+                    <a href="./" target="_blank">10</a>
+                    <a href="./" target="_blank">11</a>
+                    <a href="./" target="_blank" class="next">NEXT</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="spaceline"></div>
+    <div class="footer">
+    	<p>地址：北京市朝阳区东四环大郊亭中街2号院华腾国际5号楼15A　E-mail：scaler@scaler.com.cn Tel：010-59799839　Fax：010-58857178</p>
+        <p>北京思凯乐旅游用品公司--户外用品|连锁|加盟|赢在中国亚军| 版权所有 Scaler Outdoor. All Rights Reserved.　京ICP备05014847号  </p>
+    </div>
+</body>
+</html>

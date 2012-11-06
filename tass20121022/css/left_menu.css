@@ -1,0 +1,64 @@
+div.sdmenu {
+	width: 188px;
+	margin:0px auto;
+	margin-top:8px;
+	margin-bottom:10px;
+}
+div.sdmenu a {
+	background:url(../images/leftmenu_bg1.jpg) no-repeat;
+	display: block;
+	height:28px;
+	line-height:28px;
+}
+div.sdmenu a:hover{
+	color:#cf0a11;
+}
+div.sdmenu div {
+	overflow: hidden;
+	margin-bottom:3px;
+}
+div.sdmenu div.collapsed{
+	height: 28px;
+	border-bottom:1px dotted #ccc; 
+	line-height:28px; 
+	
+}
+div.sdmenu div span 
+{
+    background:url(../images/icon_open.jpg) no-repeat 6px 8px; 
+	line-height:28px;
+	display: block;
+	height:28px;
+	line-height:28px;
+	cursor:pointer;
+	padding-left:30px;color:#f57d05;
+	border-bottom:1px dotted #ccc;
+}
+div.sdmenu div.collapsed span 
+{
+    padding-left:0px;
+	background:url(../images/icon.jpg) no-repeat 6px 8px; 
+	padding-left:30px;
+	font-weight:normal;
+	color:#000;
+	cursor:pointer;
+}
+div.sdmenu div.collapsed span:hover {
+	background:url(../images/icon.jpg) no-repeat 6px 8px; 
+	color:#fe7d05;
+}
+div.sdmenu div a 
+{
+    padding-left:7px;
+    color:#000;
+	display: block;
+	height:28px;
+	line-height:28px;
+	text-indent:21px;
+}
+div.sdmenu div a.current {
+}
+div.sdmenu div a:hover {
+	text-decoration: none;
+	color:#fe7d05;
+}

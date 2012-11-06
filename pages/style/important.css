@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+body{background:#fff; font-family:"宋体"; font-size:12px;}
+a{text-decoration:none; color:#4f4f4f;}
+ul li{list-style:none;}
+img{border:none;}
+.clear{clear:both; height:1px; overflow:hidden;}
+.main{width:950px; height:auto; margin:0px auto;}
