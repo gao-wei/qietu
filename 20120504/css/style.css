@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+	focus
+*/
+
+.picScrollX01 {
+    position: relative;
+	width:856px;
+}
+
+.picScrollX01 .scroll-show .lBtn, .picScrollX01 .scroll-show .rBtn {
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+    top: 260px;
+    height: 60px;
+    width: 60px;
+	display: block;
+	zoom: 1;
+}
+.picScrollX01 .scroll-show .arrow{
+	width: 10px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 245px;
+	right: -10px;
+	background: url(../images/bg_arrow_black.gif) no-repeat  0 0;
+}
+.picScrollX01 .scroll-show .lBtn{
+	left: 43px;
+	background: url(../images/btn_xcl_lt.png) no-repeat  0 0;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="images/btn_xcl_lt.png");
+	
+}
+.picScrollX01 .scroll-show .rBtn{
+	right: 43px;
+	background: url(../images/btn_xcl_rt.png) no-repeat  0 0;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src="images/btn_xcl_rt.png");
+	
+}
+.picScrollX01 .scroll-show .bglt, .picScrollX01 .scroll-show .bgrt {
+    position: absolute;
+    z-index: 10;
+    background: #000;
+    cursor: pointer;
+    
+    height: 712px;
+    width: 167px;
+    filter: alpha(opacity = 70);
+    opacity: 0.7
+}
+.picScrollX01 .rBtn {
+   
+}
+.picScrollX01 .bgrt {
+    right: 0px;
+}
+.picScrollX01 .scroll-show {
+    width: 856px;
+	padding: 0px;
+	background-color:#000;
+    position: relative;
+    z-index: 1;
+    height: 714px;
+}
+.picScrollX01 .scroll {
+    width: 856px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 712px;
+}
+
+.picScrollX01 .bd {
+    height: 712px;
+    width: 100000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.picScrollX01 .item, .picScrollX01 .item_start, .picScrollX01 .item_end {
+    width: 521px;
+    height: 712px;
+    zoom: 1;
+    float: left;
+       display: inline;
+}
+
+.picScrollX01 .item {
+	width:521px;
+   
+}
+.picScrollX01 img{
+	width:521px;
+	height:712px;
+}
+
+
+.picScrollX01 .item_start {
+    margin-left: -521px;
+    position: relative;
+}
+
+.picScrollX01 .btnPlay, .picScrollX01 .btnPause {
+    color: #fff;
+    line-height: 30px;
+}

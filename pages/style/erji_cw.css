@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper{ width:878px; height:33px; line-height:33px;border-top:1px dashed #c2c2c2; padding-left:72px; margin-bottom:10px; background:#f2f2f2 url(../images/wrapper_bg.gif) no-repeat 56px 10px;}
+
+
+
+
+
+/*公用开始--lampsunny-2012-6-27*/
+.fl{float:left;}
+.f30{font-size:30px;}
+.h20{height:20px; line-height:20px;}
+.l20{line-height:20px;}
+.l25{line-height:25px;}
+.l35{line-height:35px;}
+.l40{line-height:40px;}
+.pt25{padding-top:25px;}
+.mt5{margin-top:5px;}
+.mt12{margin-top:12px;}
+.mt25{margin-top:25px;}
+.mt35{margin-top:35px;}
+.mt40{margin-top:40px;}
+.mt45{margin-top:45px;}
+.mt50{margin-top:50px;}
+.mt55{margin-top:55px;}
+.ml30{margin-left:30px;}
+.ml70{margin-left:70px;}
+.ml270{margin-left:270px;}
+.w300{width:300px;}
+.w400{width:400px;}
+.border_style{border:1px solid #e4e4e4;}
+.tal{text-align:left;}
+.colorblue{color:#25787c}
+.colorgray{color:#787878}
+.font_weight{font-weight:bold}
+/*公用结束*/
+/*预算产品二级页面开始--lampsunny-2012-6-27*/
+.price_part{width:375px; height:40px; padding-left:575px; line-height:40px;}
+.flash_info{width:950px;}
+.fashion_style{height:759px; width:932px; padding-left:18px; padding-top:45px; background:url(../images/fashion_style_box.jpg) no-repeat;}
+.splendor_noble{height:772px; width:932px; padding-left:18px; padding-top:45px; background:url(../images/splendor_noble_box.jpg) no-repeat;}
+.soft_beautiful{height:772px; width:932px; padding-left:18px; padding-top:45px; background:url(../images/soft_beautiful_box.jpg) no-repeat;}
+.product_box{margin:20px 0px;}
+.product_box_left{width:164px; height:710px; border-right:1px dashed #e3e3e3; border-top:none; border-bottom:none; border-left:none; text-align:center; float:left;}
+.product_box_right{width:735px; height:735px; padding-left:20px; float:left;}
+.product_list{margin:13px 0px;}
+.product_list_pic{float:left; width:145px; height:125px;}
+.product_list_title{float:left; width:125px; height:125px; text-align:center;}
+.product_list_thumb{float:left; width:160px; height:125px; text-align:center;}
+.product_list_price{float:left; width:125px; height:125px; text-align:center;}
+.product_list_info{float:left; width:160px; height:125px;}
+/*预算产品二级页面结束*/
+/*预算产品三级页面开始--lampsunny-2012-6-28*/
+.product_info{width:932px; border:1px solid #c4c4c4; padding:8px;}
+.product_info_left{width:405px; float:left; border-right:1px dashed #cccccc;}
+.product_info_right{width:502px; float:left; padding-left:18px; position:relative;}
+.product_thumb_list_left{float:left; width:45px; height:53px;}
+.product_thumb_list_right{float:left; width:45px; height:53px;}
+.product_thumb_list_mid{float:left;}
+.product_thumb_list_mid ul li{float:left; width:78px; text-align:center;}
+.product_thumb_list_mid ul li img{border:1px solid #CCCCCC;}
+.product_thumb_list_mid ul li img:hover{border:1px solid #51a9b5;}
+.product_info_title{ width:305px; height:29px; line-height:30px; border-bottom:1px dashed #CCCCCC;}
+.zk{border:1px solid #666666; padding:3px;}
+.info2{border-bottom:1px dashed #cccccc; width:305px;}
+.info3{border-bottom:1px dashed #cccccc; width:299px; background:url(../images/info_bg.jpg) repeat; padding-bottom:17px; padding-left:6px;}
+.info4{width:305px;}
+.info2 ul{list-style:none}
+.info2 ul li{width:301px; height:27px; line-height:27px; padding-left:8px;}
+.seton{background:#fafafa; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; border-left:1px solid #dddddd; border-right:none;}
+.introduction{position:absolute; right:3px; top:2px; width:178px; height:453px; border:1px solid #dddddd; z-index:-3; padding-top:20px; padding-left:10px;}
+.introduction ul{list-style:none}
+.introduction ul li{float:left; width:33px; height:50px; text-align:center; color:#a39fa0; margin:3px 0px;}
+.info3 ul{list-style:none; padding-top:10px;}
+.info3 ul li{float:left; width:49px; height:22px; line-height:22px; border:1px solid #c6c9ce; text-align:center; color:#000000; margin:0px 2px;}
+.info3 ul li:hover{background:url(../images/type_bg.jpg) no-repeat; border:none; width:51px; height:24px;}
+.ys{height:40px;}
+.expre{width:85px; height:25px; line-height:20px; padding-left:35px; background:url(../images/hand_icon.jpg) 15px 13px no-repeat; padding-top:13px;}
+.expre a{ color:#6b1110;}
+.share{background:#f1f1f1; height:30px; line-height:30px;}
+.product_info_list_left{width:778px; float:left; border-left:1px solid #dddddd; border-bottom:1px solid #dddddd; border-right:1px solid #dddddd;}
+.product_info_list_right{width:143px; float:left; margin-left:10px; _margin-left:5px; border:1px solid #dfdfdf; background:#f1f1f1; padding:7px;}
+.product_info_list_left h1{background:url(../images/info_list_bg.jpg) repeat-x; width:778px;}
+.product_info_list_left ul{list-style:none}
+.product_info_list_left ul li{float:left; width:122px; height:33px; line-height:33px; text-align:center; background:url(../images/info_list_off.jpg) no-repeat;}
+.product_info_list_left ul li a{font-size:14px; font-family:"黑体"; color:#858585;}
+.info_list_on{background:url(../images/info_list_on.jpg) no-repeat;}
+.list_info{width:724px; padding:45px 27px;}
+.list_info_title{width:704px; padding-left:16px; height:28px; background:url(../images/type_bottom_bg.jpg) 0px 25px repeat-x;}
+.list_info h2{color:#51a8b9; padding-left:16px; height:23px; background:url(../images/type_icon.jpg) 0px 4px no-repeat; padding-bottom:5px;}
+.list_info_content{width:630px; padding:30px 45px;}
+.list_info_content dl{width:300px;}
+.list_info_content dl dd,.list_info_content dt{float:left; border-bottom:1px dashed #b8dfdc; height:30px; line-height:30px;}
+.list_info_content dl dt{width:110px; color:#a2a2a2;}
+.list_info_content dl dd{width:190px; text-align:right; color:#a2a2a2;}
+.product_info_list_right h3{color:#848484; font-size:12px; border-bottom:1px dashed #959595; height:25px;}
+.shouhou{ height:31px; border-bottom:1px solid #d2d2d2; list-style:none;}
+.shouhou li.shouhou_on{background:url(../images/tab_on.jpg) no-repeat !important;}
+.shouhou li{float:left; width:97px !important; height:31px !important; background:url(../images/tab_off.jpg) no-repeat !important; margin:0px 3px !important;}
+
+.aftermarket {
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 777px;
+}
+.aftermarket .tab_nav {
+    background: url("../images/goods_tabs_line.gif") repeat-x scroll left bottom transparent;
+    height: 31px;
+}
+.aftermarket .tab_nav b {
+    background: url("../images/aftermarket.gif") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    margin-right: 5px;
+    text-align: center;
+    width: 97px;
+}
+.aftermarket .tab_nav b.un {
+    background: url("../images/aftermarket_on.gif") repeat scroll 0 0 transparent;
+}
+.aftermarket .tab_con {
+	/*border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	border-left:1px solid #dddddd;*/
+    padding: 50px 100px 50px 275px;
+    width: 400px;
+}
+/*预算产品三级页结束*/

@@ -1,0 +1,13 @@
+index.html、about.html、gongcheng.html、hezuo.html 这四个页面修改的内容为：
+<div class="nav">
+
+</div>
+这个div中的全部内容。
+
+style.css中
+
+从/* header */ 到.banner中的全部内容
+
+
+
+图片新增：sub_nav_bg.png、sub_nav_li_bg.gif、sub_nav_li_active_bg.gif、sub_nav_bg.gif、nav_bg.gif

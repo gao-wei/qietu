@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url("global.css");
+/* index */
+.about_banner {
+	height:190px;
+}
+/* mainLeft */
+.mainLeft {
+	width:230px;
+	float:left;
+}
+.menu {
+	width:135px;
+	margin:70px auto;
+}
+.menu h3 {
+	height:21px;
+	line-height:21px;
+	color:#4c765e;
+	font-weight:bold;
+	background:url(../images/ponit_4.gif) no-repeat 1px 4px;
+	padding-left:17px;
+	font-size:14px;
+	border-bottom:1px #6a6a6a solid;
+}
+.menu ul li {
+	height:28px;
+	border-bottom:1px #6a6a6a solid;
+	line-height:28px;
+	background:url(../images/menu_li_bg.gif) repeat-x;
+}
+.menu ul li a:link , .menu ul li a:visited {
+	color:#4e504f;
+	font-size:14px;
+	background:url(../images/ponit_2.gif) no-repeat 15px 5px;
+	padding-left:35px;
+	font-weight:bold;
+}
+.menu ul li.active a:link , .menu ul li.active a:visited {
+	color:#be3b0f;
+}
+.menu ul li a:hover {
+	color:#be3b0f;
+}
+/* mainRight */
+.mainRight {
+	width:600px;
+	float:right;
+	padding-top:40px;
+}
+h3.about {
+	height:27px;
+	background:#bbe2cd;
+	line-height:27px;
+	padding-left:25px;
+	font-size:14px;
+	color:#fff;
+}
+.ceo {
+	line-height:31px;
+	color:#595959;
+	padding-top:20px;
+	background:url(../images/ceo.jpg) no-repeat 420px 20px;
+}
+.ceo p {
+	text-indent:2em;
+}
+.width_380 {
+	width:380px;
+}
+.float_l {
+	float:left;
+}
+.float_r {
+	float:right;
+}
+.description {
+	line-height:31px;
+	color:#595959;
+	padding-top:20px;
+}
+.description p {
+	text-indent:2em;
+}

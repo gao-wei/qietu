@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* Global*/
+body { 
+	margin:0px; 
+	padding:0px; 
+	font-size:11px;
+	font-family:"微软雅黑","宋体", Arial;
+	background:#171717;
+}
+.main {
+	width:100%;
+	position:relative;
+}
+.mainBody {
+	position:absolute;
+	width:100%;
+	z-index:99;
+	left:0px;
+	top:0px;
+}
+.mainBody_bottom {
+	width:100%;
+}
+.mainBody_bottom_l {
+	width:50%;
+	position:absolute;
+	z-index:1;
+	left:0px;
+	top:0px;
+	background:#171717;
+}
+.mainBody_bottom_r {
+	width:50%;
+	position:absolute;
+	z-index:1;
+	right:0px;
+	top:0px;
+	background:#171717;
+}
+.mainContent {
+	width:1086px;
+	margin:0px auto;
+	#width:1086px;
+}
+.sidebar {
+	float:left;
+	width:210px;
+	background:#171717;
+	color:#535353;
+	height:712px;
+	padding-right:20px;
+}
+.content {
+	float:right;
+	width:856px;
+	background:#171717;
+}
+.logo {
+	width:111px;
+	height:77px;
+	overflow:hidden;
+	margin:0px auto;
+	margin-top:35px;
+}
+.menu_about {
+	padding:15px 19px 5px 27px;
+	text-align:center;
+}
+.menu_about p {
+	text-indent:2em;
+	text-align:left;
+	color:#818181;
+	line-height:17px;
+	font-weight:bold;
+}
+.menu_about p.eng {
+	color:#aaaaaa;
+	font-weight:normal;
+	word-spacing:2px;
+}
+
+/* project */
+.project_item {
+	margin:0px 80px;
+	margin-top:40px;
+}
+.project_item_list {
+	height:68px;
+	overflow:hidden;
+	background:url(../images/point.gif) no-repeat 0px 33px;
+	padding-left:20px;
+	margin-bottom:40px;
+}
+.project_item_img {
+	width:120px;
+	overflow:hidden;
+	height:68px;
+	float:left;
+}
+.project_item_description {
+	padding-left:20px;
+	color:#797979;
+	float:left;
+	width:400px;
+}
+.project_item_description_title{
+	color:#9b9b9b;
+	height:20px;
+	background:url(../images/project_item_description_title_h3_bg.gif) no-repeat left bottom;
+	font-size:12px;
+}
+.project_item_description_title a:link , .project_item_description_title a:visited {
+	color:#9b9b9b;
+}
+.project_item_description p {
+	font-size:11px;
+	color:#797979;
+	line-height:16px;
+}
+
+.button_l {
+	float:left;
+	width:167px;
+	text-align:center;
+	padding-top:300px;
+}
+.button_r {
+	float:left;
+	width:167px;
+	text-align:center;
+	padding-top:300px;
+}
+.project { 
+	width:455px;
+	height:700px;
+	overflow:hidden;
+	float:left;
+	position:relative;	
+}
+.project_list {
+	position:absolute; 
+	width:2500px;
+	top:0px; 
+	left:0px;
+}
+.project ul li {
+	display:inline; 
+	float:left; 
+	width:455px;
+	height:700px;
+	overflow:hidden; 
+}
+.project ul li img {
+	width:455px;
+	height:700px;
+}
+

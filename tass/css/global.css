@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* global */
+body { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px;
+	font-family:"宋体",Arial;background:#f4f4f4; line-height:22px;
+}
+div, form, img, ul, ol, li, dl, dt, dd, p{ 
+	margin:0px; 
+	padding:0px; 
+	border:0; 
+}
+li { 
+	list-style:none; 
+}
+h1, h2, h3, h4, h5, h6, input { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px; 
+}
+table, td, tr, th { 
+	font-size:12px; 
+}
+a{ text-decoration:none;}
+
+.spaceline { 
+	clear:both; 
+	height:10px;
+	overflow:hidden;
+}
+.spaceline_5 { 
+	clear:both; 
+	height:5px;
+	overflow:hidden;
+}
+.spaceline_8 { 
+	clear:both; 
+	height:8px;
+	overflow:hidden;
+}
+.spaceline_15 { 
+	clear:both; 
+	height:15px;
+	overflow:hidden;
+}
+.spaceline_20 { 
+	clear:both; 
+	height:20px;
+	overflow:hidden;
+}
+.spaceline_30 { 
+	clear:both; 
+	height:30px;
+	overflow:hidden;
+}
+.clear {
+	clear: both; 
+	font-size:0px; 
+	width:0px; 
+	height:0px; 
+	line-height:0px; 
+	padding:0px !important;
+	margin:0px !important;
+}
+
+
+.header {
+	width:1000px;
+	height:90px;
+	margin:0px auto;
+	overflow:hidden;
+}
+.logo {
+	width:285px;
+	height:70px;
+	overflow:hidden;
+	float:left;
+	padding-top:17px;
+}
+.head{ width:715px; float:left;}
+.header_top a{ color:#555;}
+
+.nav{ margin-top:10px;}
+.nav ul{ margin-left:75px;}
+.nav ul li{ float:left; width:80px; text-align:center; background:url(../images/menu_bj.jpg) repeat-x; height:39px; line-height:39px;}
+.nav ul li a{ font-family:"微软雅黑"; color:#fff; font-size:14px;}
+.nav ul li a:hover{background:url(../images/menu_h_bj.jpg) no-repeat; display:block;}

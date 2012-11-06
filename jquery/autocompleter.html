@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Autocompleter demo - Interface plugin for jQuery</title>
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<script type="text/javascript" src="interface/interface.js"></script>
+<style type="text/css" media="all">
+
+body
+{
+	background: #fff;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+}
+.autocompleter
+{
+	border: 1px solid #6FBEFF;
+	width: 250px;
+	background-color: #EFF8FF;
+}
+.autocompleter ul li
+{
+	padding: 2px 10px;
+	white-space: nowrap;
+	font-size: 11px;
+}
+.selectAutocompleter
+{
+	background-color: #d2fb8f;
+}
+#selectedCity
+{
+	border: 1px solid #eee;
+	width: 250px;
+	padding: 10px;
+	float: right;
+}
+</style>
+</head>
+<body>
+<div id="selectedCity">
+	<strong>City: <span id="city"></span></strong><br />
+	<strong>District:</strong> <span id="district"></span><br />
+	<strong>Population:</strong> <span id="population"></span><br />
+	<p>This will be filled once you select a suggestion.</p>
+</div>
+<form method="post" action="index2.php">
+<p>Search for a city.</p>
+<input type="text" id="autocompleteMe" size="40" /><br /><br />
+
+<select>
+	<option>Europa</option>
+	<option>Asia</option>
+	<option>North America</option>
+	<option>South America</option>
+	<option>Antarctica</option>
+</select>
+<input type="submit" />
+</form>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ut quam in odio aliquet nonummy. Mauris massa. Fusce vitae augue at ante placerat eleifend. Nullam adipiscing varius tortor. Aliquam sit amet nisi. Vivamus quis dui vel tellus porta rhoncus. Sed mattis risus eget tortor varius sodales. Vivamus vitae sem. Suspendisse vulputate commodo lectus. Sed at nulla. Nunc aliquam vehicula justo. Cras lacus nisi, ornare in, faucibus quis, viverra in, eros. Sed eget dui. In tristique, purus in nonummy cursus, lacus sem vulputate eros, rhoncus accumsan velit diam sit amet orci.</p>
+
+</p>Etiam dui lectus, consequat id, venenatis nec, bibendum id, lacus. Ut odio dui, mollis sit amet, vestibulum in, luctus ut, dolor. Aliquam magna. Praesent vulputate volutpat purus. Vivamus sit amet odio in purus facilisis gravida. Etiam mollis quam at quam. Pellentesque venenatis sagittis purus. In nibh libero, vestibulum sed, consectetuer non, laoreet vitae, urna. Pellentesque eu erat sed quam posuere ullamcorper. Ut feugiat risus bibendum ante. Quisque porttitor congue dolor. Morbi sapien. Cras eget felis. Phasellus nunc sem, feugiat gravida, suscipit varius, pellentesque a, ipsum. Nam a nibh et orci placerat placerat. In eget erat. In sed nibh sit amet ligula lobortis malesuada. In hac habitasse platea dictumst. Fusce tristique enim non ligula. </p>
+<script type="text/javascript">
+
+var cityCode = function(data) {
+	$('#city').html(data.value);
+	$('#district').html(data.district);
+	$('#population').html(data.population);
+};
+
+var fadeInSuggestion = function(suggestionBox, suggestionIframe) 
+{
+	$(suggestionBox).fadeTo(300,0.8);
+};
+var fadeOutSuggestion = function(suggestionBox, suggestionIframe) 
+{
+	$(suggestionBox).fadeTo(300,0);
+};
+
+$(document).ready(
+	function()
+	{
+		$('#autocompleteMe').Autocomplete(
+			{
+				source: '../autocomplete.php',
+				delay: 500,
+				fx: {
+					type: 'slide',
+					duration: 400
+				},
+				autofill: true,
+				helperClass: 'autocompleter',
+				selectClass: 'selectAutocompleter',
+				minchars: 2,
+				onSelect : cityCode,
+				onShow : fadeInSuggestion,
+				onHide : fadeOutSuggestion
+			}
+		);
+	}
+);
+</script>
+
+
+		<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+		<script language="JavaScript" src="http://stats.byspirit.ro/track.js" type="text/javascript"></script>
+		<noscript>
+		<p><img alt="" src="http://stats.byspirit.ro/image.php?client_id=1" width="1" height="1" /></p>
+		</noscript>
+</body>
+</html>

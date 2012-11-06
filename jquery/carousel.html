@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Carousel demo - Interface plugin for jQuery</title>
+		<script type="text/javascript" src="jquery/core.js"></script>
+		<script type="text/javascript" src="jquery/selector.js"></script>
+		<script type="text/javascript" src="jquery/event.js"></script>
+		<script type="text/javascript" src="jquery/ajax.js"></script>
+		<script type="text/javascript" src="jquery/fx.js"></script>
+		<script type="text/javascript" src="i/iutil.js"></script>
+		<script type="text/javascript" src="i/idrag.js"></script>
+		<script type="text/javascript" src="i/accordion.js"></script>
+		<script type="text/javascript" src="i/carousel.js"></script>
+		<script type="text/javascript" src="i/fisheye.js"></script>
+		<script type="text/javascript" src="i/iautocompleter.js"></script>
+		<script type="text/javascript" src="i/icassistant.js"></script>
+		<script type="text/javascript" src="i/iexpander.js"></script>
+		<script type="text/javascript" src="i/imagebox.js"></script>
+		<script type="text/javascript" src="i/iresizable.js"></script>
+		<script type="text/javascript" src="i/iselect.js"></script>
+		<script type="text/javascript" src="i/islider.js"></script>
+		<script type="text/javascript" src="i/islideshow.js"></script>
+		<script type="text/javascript" src="i/isortables.js"></script>
+		<script type="text/javascript" src="i/ittabs.js"></script>
+<style type="text/css" media="screen">
+*
+{		
+	margin: 0;
+	padding: 0;
+}
+img
+{
+	border: none;
+}
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	background-color: #000;
+}
+#carousel
+{
+	width: 700px;
+	height: 150px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -350px;
+}
+#carousel a
+{
+	position: absolute;
+	width: 110px;
+}
+
+#ImageBoxOverlay
+{
+	background-color: #000;
+	z-index: 1000;
+}
+#ImageBoxOuterContainer{
+	z-index: 1000;
+}
+#ImageBoxCaption
+{
+	background-color: #F4F4EC;
+}
+#ImageBoxContainer
+{
+	width: 250px;
+	height: 250px;
+	background-color: #F4F4EC;
+}
+#ImageBoxCaptionText
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 13px;
+	color: #000;
+}
+#ImageBoxCaptionImages
+{
+	margin: 0;
+}
+#ImageBoxNextImage
+{
+	background-image: url(images/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxPrevImage
+{
+	background-image: url(images/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxNextImage:hover
+{
+	background-image: url(images/imagebox/next_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: right top;
+}
+#ImageBoxPrevImage:hover
+{
+	background-image: url(images/imagebox/prev_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: left bottom;
+}
+</style>
+</head>
+
+<body>
+<div id="carousel">
+	<a href="images/imagebox/bw1.jpg" title="Moon eclipse" rel="imagebox"><img src="images/carousel/th_bw1.jpg" width="100%" /></a>
+	<a href="images/imagebox/bw2.jpg" title="Rain drops" rel="imagebox"><img src="images/carousel/th_bw2.jpg" width="100%" /></a>
+	<a href="images/imagebox/bw3.jpg" title="Church" rel="imagebox"><img src="images/carousel/th_bw3.jpg" width="100%" /></a>
+	<a href="images/imagebox/lights1.jpg" title="City lights" rel="imagebox"><img src="images/carousel/th_lights1.jpg" width="100%" /></a>
+	<a href="images/imagebox/lights2.jpg" title="Flash lights" rel="imagebox"><img src="images/carousel/th_lights2.jpg" width="100%" /></a>
+	<a href="images/imagebox/lights3.jpg" title="Laser lights" rel="imagebox"><img src="images/carousel/th_lights3.jpg" width="100%" /></a>
+</div>
+<script type="text/javascript">
+	window.onload = 
+		function()
+		{
+			$('#carousel').Carousel(
+				{
+					itemWidth: 110,
+					itemHeight: 62,
+					itemMinWidth: 50,
+					items: 'a',
+					reflections: .5,
+					rotationSpeed: 1.8
+				}
+			);
+			$.ImageBox.init(
+				{
+					loaderSRC: 'images/imagebox/loading.gif',
+					closeHTML: '<img src="images/imagebox/close.jpg" />'
+				}
+			);
+		};
+</script>
+		<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+		<script language="JavaScript" src="http://stats.byspirit.ro/track.js" type="text/javascript"></script>
+		<noscript>
+		<p><img alt="" src="http://stats.byspirit.ro/image.php?client_id=1" width="1" height="1" /></p>
+		</noscript>
+</body>
+</html>

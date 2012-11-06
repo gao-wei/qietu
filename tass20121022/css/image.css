@@ -1,0 +1,75 @@
+@import url("global.css");
+/* image */
+.main {
+	width:964px;
+	margin:0px auto;
+}
+.images_list {
+	width:745px;
+	height:570px;
+}
+.myImages 
+{
+    margin-top:20px;
+    margin-left:20px;
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+	height:408px;
+	width:700px;
+	cursor:pointer;
+	background:#fff url(../images/loading.gif) center center no-repeat;
+}
+.myImages img{
+	width: 700px;
+	height:408px;
+	border::none;
+}
+.myImgs {
+	display:none;
+}
+/*  wrapper element  */
+#scrollable {
+	background-color:#d3d3d3;
+	width:750px;
+	height:97px;
+	margin-top:10px;
+	padding-top:13px;
+}
+div.items {
+	height:82px;	
+	float:left;
+	width:600px !important;
+	visibility: visible;
+	overflow: hidden; 
+	position: relative;
+}
+/* item */
+div.items a {
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	width:140px;
+	height:82px;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+}
+
+.scrollableDiv{
+	position: absolute; width: 200000em; left: 0px;
+}
+.scrollableDiv a img{ width:140px;}
+/* next / prev buttons */
+a.prevpic, a.nextpic {
+	background:url(../images/go_down.jpg) no-repeat 0 0;
+	display:block;
+	width:72px;
+	height:82px;
+	margin-top:4px;
+	float:left;	
+	cursor:pointer;
+}
+a.nextpic {
+	background-image:url(../images/go_up.jpg)		
+}

@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	background:#505859;
+	font-size:12px;
+	color:#666;
+	line-height:22px;
+}
+
+img{
+	border:none;
+}
+
+.clear{
+	height:1px;
+	clear:both;
+	overflow:hidden;
+}
+
+a{
+	color:#666;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#93c42a;
+}
+
+ul{
+	list-style:none;
+}
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+#header{
+	height:40px;
+	background:#000; 
+}
+#head,#main{
+	width:990px;
+	margin:0px auto;
+	
+}
+#search{
+	width:270px;
+	background:url(../images/search35.jpg) no-repeat;
+	height:35px;
+}
+
+.searchin{
+	width:170px;
+	margin-top:8px;
+	margin-left:40px;
+	background:none;
+	border:none;
+}
+
+.searchbtn{
+	margin-right:10px;
+	margin-top:5px;
+	display:block;
+	width:20px;
+	height:21px;
+}
+#main{
+	margin-top:16px;
+}
+#pro_left{
+	width:150px;
+}
+#leftblock{
+		background:url(../images/ying.png) repeat-y right 40px;
+
+	}
+#side_nav ul{display:none}
+.leftcont{
+	width:146px;
+}
+.navlist{
+	background:#FFF;
+	font-family:微软雅黑,黑体;
+	font-size:15px;
+	letter-spacing:2px;
+	
+}
+.navlist span{
+	display:block;
+	height:40px;
+	background:url(../images/list.jpg)  120px center no-repeat;
+	line-height:40px;
+	padding-left:20px;
+	color:#000;
+	border-bottom:1px #ccc  dashed;
+
+}
+.navlist ul {
+	display:block;
+	background:#5f5b5a;
+	padding-top:8px;
+	padding-bottom:8px;
+	border:1px #d5d3d2 solid;
+	border-top:none;
+
+}
+
+.navlist ul li a{
+	font-family:"宋体";
+	font-size:12px;
+	color:#FFF;
+	display:block;
+	padding-left:30px;
+	display:block;
+	line-height:24px;
+	
+}
+
+.navlist ul li a.selecteds{
+	color:#93c42a;
+	background:url(../images/list1.jpg) 120px center no-repeat;
+}
+
+
+
+#ullist{
+	margin-top:30px;
+	width:146px;
+}
+#ullist ul li{
+	margin-bottom:3px;
+}
+#ullist ul li a{
+	height:40px;
+	display:block;
+	font-size:15px;
+	letter-spacing:2px;
+	background:#FFF;
+	font-family:微软雅黑,黑体;
+	text-align:center;
+	line-height:40px;
+}
+	
+	
+	
+#leftblock02 {
+	margin-top:130px;
+	width:146px;
+}
+#leftblock02 p{
+	color:#FFF;
+	display:block;
+	background:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:5px;
+	line-height:20px;
+}
+
+
+
+
+
+
+
+#pro_right{
+	width:836px;
+}
+
+
+.pro_left_b{
+	width:610px;
+	height:59px;
+	/*background:url(../images/prosearch59.png) no-repeat !important;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src="../images/prosearch59.png");*/
+	background:url(../images/prosearch59.png) no-repeat !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src="../images/prosearch59.png");
+
+	
+
+	
+}
+
+.searchf{
+	margin-left:15px;
+	margin-top:25px;
+}
+.proselect{
+	width:166px;
+	background:none;
+	border:none;
+	background: transparent;
+	background:url(../images/searchbg27.png) no-repeat;
+	
+	height:26px;
+	padding-left:25px;
+}
+
+#main{
+	position:relative;
+}
+
+.biglogo{
+	position:absolute;
+	right:310px;
+	top:-50px;
+}
+
+
+
+.pro_right_b{
+	width:200px;
+	background:url(../images/scalerbg.png);
+	height:42px;
+	margin-top:10px;
+}
+.pro_blocks img{
+	margin:0px auto;
+}
+
+.pro_blocks{
+	background:url(../images/scalerbtn.jpg) 175px 12px no-repeat;
+	height:42px;
+	padding:7px;
+}
+
+
+
+#right_main{
+	margin-top:20px;
+}
+
+.right_main_cont{
+	padding:18px;
+	padding-top:10px;
+	background:#000;
+}
+.right_main_list{
+	margin-top:15px;
+	overflow:hidden;
+}
+.right_main_list ul li{
+	width:178px;
+	height:178px;
+	float:left;
+	margin-right:28px;
+	margin-bottom:20px;
+	
+}
+.right_main_list ul li.marginnone{
+	margin-right:0px;
+}
+
+#page a{
+	height:24px;
+	width:24px;
+	display:block;
+	float:left;
+	background:url(../images/pagebg.jpg) repeat-x;
+	font-family:"Arial Black", Gadget, sans-serif;
+	border:1px #7f7f7f solid;
+	border-right:1px #3a3a3a solid;
+	border-bottom:none;
+	text-align:center;
+	
+}
+#page a:hover{
+	background:#8dc21f;
+	color:#FFF;
+}
+#page{
+	float:right;
+	margin-top:50px;}
+#page a.prev,#page a.next{
+	width:55px;
+
+}
