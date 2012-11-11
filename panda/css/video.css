@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url("global.css");
+/* video */
+.main {
+	width:964px;
+	margin:0px auto;
+}
+.main_l {
+	width:632px;
+	float:left;
+}
+.main_r {
+	width:322px;
+	float:right;
+}
+.main_l .video_title {
+	height:40px;
+	line-height:40px;
+	color:#d51719;
+	font-weight:bold;
+	font-size:14px;
+}
+.video_flash {
+	border:1px #cecece solid;
+	text-align:center;
+	padding-top:11px; 
+	padding-bottom:11px;
+	height:496px;
+	overflow:hidden;
+}
+.main_r .video_title {
+	height:40px;
+	line-height:40px;
+	color:#5a5a5a;
+	font-weight:bold;
+	font-size:14px;
+	text-align:right;
+}
+.video_list {
+	border:1px #cecece solid;
+	height:518px;
+	overflow:hidden;
+}
+.video_list_title {
+	height:33px;
+	line-height:33px;
+	border-bottom:1px #cecece solid;
+	background:#f2f2f2;
+	padding-left:10px;
+	font-size:14px;
+	font-weight:bold;
+	color:#5a5a5a;
+}
+.video_list ul {
+	padding-left:10px;
+}
+.video_list ul li {
+	width:143px;
+	float:left;
+	height:140px;
+	text-align:center;
+	margin-right:10px;
+}
+.video_list ul li img {
+	width:141px;
+	height:107px;
+	border:1px #cecece solid;
+}
+.video_list ul li p {
+	height:31px;
+	line-height:20px;
+	overflow:hidden;
+}
+.video_list .pages {
+	text-align:center;
+}
