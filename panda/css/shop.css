@@ -50,7 +50,12 @@ a:active {
 	height:5px;
 	overflow:hidden;
 }
-.spaceline_8 { 
+.spaceline_7 { 
+	clear:both; 
+	height:8px;
+	overflow:hidden;
+}
+.spaceline_7 { 
 	clear:both; 
 	height:8px;
 	overflow:hidden;
@@ -118,7 +123,7 @@ a:active {
 }
 .header_info {
 	width:490px;
-	height:82px;
+	height:62px;
 	overflow:hidden;
 	float:right;
 	text-align:right;
@@ -153,11 +158,78 @@ a:active {
 	border:1px #ff6902 solid;
 }
 
+/* nav */
+.nav {
+	height:34px;
+	margin:0px auto;
+	width:964px;
+}
+.category_all {
+	width:235px;
+	float:left;
+}
+.shop_cart {
+	width:130px;
+	float:right;
+	height:34px;
+	overflow:hidden;
+}
+.nav ul {
+	width:500px;
+	float:left;
+	padding-left:20px;
+}
+.nav ul li {
+	float:left;
+	width:86px;
+	text-align:center;
+	line-height:34px;
+}
+.nav ul li a:link , .nav ul li a:visited {
+	width:86px;
+	height:34px;
+	overflow:hidden;
+	color:#d93d40;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+}
+.nav ul li a:hover {
+	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
+	color:#FFFFFF;
+}
+.nav ul li a.active:link , .nav ul li a.active:visited {
+	width:86px;
+	height:34px;
+	overflow:hidden;
+	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+}
+
 /* shop_main */
 .shop_main {
 	min-height:200px;
+	width:964px;
+	margin:0px auto;
 }
 
+.shop_main_left {
+	width:235px;
+	float:left;
+}
+.shop_main_right {
+	width:725px;
+	float:right;
+}
+/* category */
+.category {
+	width:233px;
+	height:338px;
+	border:1px #951315 solid;
+}
 /* footer */
 .footer {
 	height:45px;
