@@ -76,10 +76,38 @@ a:active {
 }
 
 /* header */
+.header_top {
+	height:34px;
+	width:964px;
+	margin:0px auto;
+	line-height:34px;
+}
+.header_top span a:link , .header_top span a:visited {
+	color:#ff8302;
+}
+.header_top ul {
+	float:right;
+	width:300px;
+}
+.header_top ul li {
+	float:left;
+	width:70px;
+	text-align:center;
+}
+.header_top ul li.first {
+	width:73px;
+	background:url(../images/header_top_li_first.gif) no-repeat right;
+	padding-left:7px;
+	text-align:left;
+}
+.header_top ul li.third {
+	background:url(../images/header_top_li_third.gif) no-repeat right;
+}
 .header {
 	width:964px;
 	margin:0px auto;
 	padding-top:25px;
+	height:78px;
 	background:url(../images/header_bg.gif) no-repeat;
 }
 .logo {
@@ -89,7 +117,7 @@ a:active {
 	float:left;
 }
 .header_info {
-	width:390px;
+	width:490px;
 	height:82px;
 	overflow:hidden;
 	float:right;
@@ -106,29 +134,28 @@ a:active {
 .header_search {
 	height:24px;
 	overflow:hidden;
-	background:url(../images/telepone.gif) no-repeat 0px 3px;
+	background:url(../images/telepone.gif) no-repeat 0px 20px;
+	padding-top:16px;
 }
 .search_text {
-	height:22px;
+	height:24px;
 	border:1px #ccc solid;
 	line-height:22px;
-	width:150px;
+	width:260px;
 	background:#fff url(../images/search_text_bg.gif) no-repeat;
-	padding-left:25px;
+	padding-left:26px;
+	border-right:none;
 }
 .search_button {
-	width:48px;
-	height:22px;
+	width:61px;
+	height:24px;
 	background:url(../images/search_button_bg.gif) repeat-x;
-	border:1px #ccc solid;
+	border:1px #ff6902 solid;
 }
 
-/* index */
-.banner {
-	width:964px;
-	height:385px;
-	overflow:hidden;
-	margin:0px auto;
+/* shop_main */
+.shop_main {
+	min-height:200px;
 }
 
 /* footer */
