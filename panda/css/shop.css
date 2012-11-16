@@ -5,7 +5,7 @@ body {
 	padding:0px; 
 	font-size:12px;
 	font-family:"宋体",Arial;
-	background:url(../images/body_bg.gif) repeat-x;
+	background:url(../images/shop_body_bg.gif) repeat-x;
 }
 div, form, img, ul, ol, li, dl, dt, dd, p{ 
 	margin:0px; 
@@ -113,7 +113,7 @@ a:active {
 	margin:0px auto;
 	padding-top:25px;
 	height:78px;
-	background:url(../images/header_bg.gif) no-repeat;
+	background:url(../images/shop_header_bg.gif) no-repeat;
 }
 .logo {
 	width:197px;
@@ -147,14 +147,14 @@ a:active {
 	border:1px #ccc solid;
 	line-height:22px;
 	width:260px;
-	background:#fff url(../images/search_text_bg.gif) no-repeat;
+	background:#fff url(../images/shop_search_text_bg.gif) no-repeat;
 	padding-left:26px;
 	border-right:none;
 }
 .search_button {
 	width:61px;
 	height:24px;
-	background:url(../images/search_button_bg.gif) repeat-x;
+	background:url(../images/shop_search_button_bg.gif) repeat-x;
 	border:1px #ff6902 solid;
 }
 
@@ -184,6 +184,7 @@ a:active {
 	width:86px;
 	text-align:center;
 	line-height:34px;
+	margin:0px 5px;
 }
 .nav ul li a:link , .nav ul li a:visited {
 	width:86px;
@@ -229,6 +230,118 @@ a:active {
 	width:233px;
 	height:338px;
 	border:1px #951315 solid;
+}
+.category ul {
+	padding:15px;
+}
+.category ul li {
+	margin-bottom:20px;
+}
+.category ul li h3 {
+	height:14px;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.category ul li h3 a:link , .category ul li h3 a:visited {
+	color:#333333;
+}
+.category ul li h3 a:hover {
+	color:#999;
+}
+.category ul li h3 img {
+	vertical-align:middle;
+}
+.category ul li p {
+	height:40px;
+	line-height:20px;
+}
+.category ul li p a:link , .category ul li p a:visited {
+	padding-right:12px;
+	color:#333333;
+}
+.category ul li p a:hover {
+	color:#999;
+}
+/* shop_notic */
+.shop_notic {
+	width:233px;
+	border:1px #d7d7d7 solid;
+	height:434px;
+	float:right;
+	overflow:hidden;
+}
+.shop_notic_title {
+	height:32px;
+	overflow:hidden;
+}
+.shop_notic_title ul {
+	width:234px;
+}
+.shop_notic_title ul li {
+	float:left;
+	line-height:32px;
+	width:117px;
+	overflow:hidden;
+	text-align:center;
+	font-size:14px;
+}
+.shop_notic_title ul li a:link , .shop_notic_title ul li a:visited {
+	color:#fb5942;
+}
+.shop_notic_title ul li.active a:link , .shop_notic_title ul li.active a:visited {
+	color:#ffffff;
+}
+.shop_notic_title ul li.active {
+	background:url(../images/shop_notic_title_bg.gif) repeat-x;
+}
+.shop_notic_list {
+	height:215px;
+	overflow:hidden;
+}
+.shop_notic_list ul {
+	display:none;
+	padding:10px;
+}
+.shop_notic_list ul li {
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+	padding-left:10px;
+	background:url(../images/point_1.gif) no-repeat 0px 8px;
+}
+
+/* ad */
+.ad_235_140 {
+	width:235px;
+	height:140px;
+	overflow:hidden;
+}
+.shop_main_ad {
+	width:484px;
+	float:left;
+}
+.ad_484_140 {
+	width:484px;
+	height:140px;
+	overflow:hidden;
+}
+.ad_248_287 {
+	width:248px;
+	height:287px;
+	overflow:hidden;
+	float:left;
+}
+.ad_231_287 {
+	width:231px;
+	height:287px;
+	overflow:hidden;
+	float:right;
+}
+.ad_230_185 {
+	width:230px;
+	height:185px;
+	overflow:hidden;
+	margin:0px auto;
 }
 /* footer */
 .footer {
