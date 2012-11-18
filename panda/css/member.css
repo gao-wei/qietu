@@ -174,19 +174,19 @@ a:active {
 	height:34px;
 	overflow:hidden;
 }
-.nav ul {
+#nav_menu {
 	width:500px;
 	float:left;
 	padding-left:20px;
 }
-.nav ul li {
+#nav_menu li {
 	float:left;
 	width:86px;
 	text-align:center;
 	line-height:34px;
 	margin:0px 5px;
 }
-.nav ul li a:link , .nav ul li a:visited {
+#nav_menu li a:link , #nav_menu li a:visited {
 	width:86px;
 	height:34px;
 	overflow:hidden;
@@ -195,11 +195,12 @@ a:active {
 	font-size:14px;
 	display:block;
 }
-.nav ul li a:hover {
+#nav_menu li a:hover {
 	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
 	color:#FFFFFF;
+	color:#FFFFFF;
 }
-.nav ul li a.active:link , .nav ul li a.active:visited {
+#nav_menu li a.active:link , #nav_menu a.active:visited {
 	width:86px;
 	height:34px;
 	overflow:hidden;
@@ -664,4 +665,174 @@ a:active {
 	background:#ff6d00;
 	color:#FFFFFF;
 }
+
+
+/* 二级导航 */
+#nav_menu {
+	width:500px;
+	float:left;
+	padding-left:20px;
+}
+#nav_menu li {
+	float:left;
+	width:86px;
+	text-align:center;
+	line-height:34px;
+	margin:0px 5px;
+}
+#nav_menu li a:link , #nav_menu li a:visited {
+	width:86px;
+	height:34px;
+	overflow:hidden;
+	color:#d93d40;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+}
+#nav_menu li a:hover {
+	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
+	color:#FFFFFF;
+	color:#FFFFFF;
+}
+#nav_menu li a.active:link , #nav_menu a.active:visited {
+	width:86px;
+	height:34px;
+	overflow:hidden;
+	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+}
+.category_all {
+	width:235px;
+	float:left;
+	position: relative;
+	z-index:999;
+	display:inline-block;
+}
+.category_b {
+	width:235px;
+	float:left;
+}
+#ifrnav {
+	background:#FAFFF5;
+	border:1px #951315 solid;
+	height: 453px;
+    position: relative;
+    width: 233px;
+    z-index: 997;   
+}
+#ifrnav .items li.itemsli {
+	border:1px #951315 solid;
+	border-bottom:none;
+    cursor: pointer;
+    float: left;
+    height: 63px;
+    padding: 0px 9px;
+    width: 203px;
+}
+#ifrnav .items li.onthis {
+    border:1px #951315 solid;
+	border-left:none;
+	border-right:none;
+    position: relative;
+}
+#ifrnav .items li.onthis .sebg {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    height: 63px;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 1px;
+    z-index: 996;
+}
+#ifrnav .items li.onthis .name h3 a {
+    color: #66666;
+}
+#ifrnav li.itemsli .name {
+    line-height: 18px;
+    margin: 15px 0 0;
+    width: 180px;
+}
+#ifrnav li.itemsli .name a, #ifrnav li.itemsli h3 {
+    color: #515150;
+    display: inline;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    width: 60px;
+    word-break: keep-all;
+}
+#ifrnav li.itemsli .name h3 a {
+    color: #333;
+    font-size: 12px;
+}
+#ifrnav .floor {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #951315;
+    left: 203px;
+    position: absolute;
+    top: -1px;
+    width: 512px;
+    z-index: 995;
+}
+#ifrnav .floor li {
+    border-bottom: 1px dotted #951315;
+    display: inline;
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 8px 0 4px;
+    width: 480px;
+}
+#ifrnav .floor .cap {
+    font-weight: bold;
+    padding: 3px 15px 0 0;
+    text-align: right;
+    width: 80px;
+}
+#ifrnav .floor .cap a {
+    color: #666;
+}
+#ifrnav .floor .conts {
+    width: 385px;
+}
+#ifrnav .conts a {
+    border-left: 1px solid #951315;
+    color: #666;
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    margin: 3px 10px 5px 0;
+    padding: 0 0 0 9px;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+#ifrnav a:hover {
+    color: #999 !important;
+    text-decoration: underline;
+}
+#ifrnav.flaotnav {
+    height: 385px;
+}
+#ifrnav.flaotnav {
+	border: 1px solid #951315;
+    left: 0;
+    position: absolute;
+    top: 32px;
+    width: 233px;
+}
+#ifrnav.flaotnav li.itemsli {
+    background-position: 192px 19px;
+    border-left: 0 none;
+    border-right: 0 none;
+    height: 63px;
+    padding: 0 15px;
+}
+#ifrnav.flaotnav .floor {
+    left: 233px;
+}
+
 
