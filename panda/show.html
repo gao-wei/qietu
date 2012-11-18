@@ -4,8 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>商城详细页</title>
 <link type="text/css" rel="stylesheet" href="css/shop.css" />
+<link type="text/css" rel="stylesheet" href="css/svwp_style.css" />
 <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
 <script type="text/javascript" language="javascript" src="js/pngfix.js"></script>
+
 </head>
 
 <body>
@@ -56,22 +58,40 @@
         </div>
         <div class="product_show">
         	<div class="product_show_img">
-            	<div class="product_show_img_b" id="product_show_img_b"><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></div>
-                <div class="product_show_img_s">
-                	<div class="product_show_img_s_l"><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_l.jpg" width="21" height="63" /></a></div>
-                    <div class="product_show_img_s_m">
-                    	<ul>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        	<li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_m.jpg" width="67" height="61" /></a></li>
-                        </ul>
-                    </div>
-                    <div class="product_show_img_s_r"><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_s_r.jpg" width="20" height="63" /></a></div>
+                <div class="svwp" id="product_show_img">
+                    <ul>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                        <li><a href="./" target="_blank" title=""><img alt="" src="images/product_show_img_b.jpg" width="311" height="254" /></a></li>
+                    </ul>
                 </div>
             </div>
+            <script type="text/javascript" language="javascript" src="js/jquery.timers.js"></script>
+            <script type="text/javascript" language="javascript" src="js/jquery.slideViewerPro.1.5.js"></script>
+			<script type="text/javascript" language="javascript">
+                $(window).bind("load", function() {
+                    $("div#product_show_img").slideViewerPro({
+                        thumbs: 4,
+                        autoslide: true,
+                        asTimer: 3500,
+                        typo: true,
+                        galBorderWidth: 0,
+                        thumbsBorderOpacity: 0,
+                        buttonsTextColor: "#707070",
+                        buttonsWidth: 20,
+                        thumbsActiveBorderOpacity: 0.8,
+                        thumbsActiveBorderColor: "aqua",
+                        shuffle: true
+                    });
+                }); 
+            </script>
             <div class="product_show_info">
             	<div class="product_show_info_item"><h3>金龙报喜</h3></div>
             	<div class="product_show_info_item">商品编号：FG4455</div>

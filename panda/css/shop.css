@@ -521,10 +521,11 @@ a:active {
 	float:right;
 }
 .product_show_img {
-	width:313px;
+	width:311px;
 	float:left;
-	height:318px;
+	height:316px;
 	overflow:hidden;
+	border:1px #d3d3d3 solid;
 }
 .product_show_img_b {
 	width:311px;
@@ -549,6 +550,7 @@ a:active {
 .product_show_img_s_m ul {
 	width:500px;
 	overflow:hidden;
+	position: relative;
 }
 .product_show_img_s_m ul li {
 	width:68px;
