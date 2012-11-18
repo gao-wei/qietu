@@ -235,6 +235,59 @@ a:active {
 	font-size:14px;
 	padding-left:12px;
 }
+.login_form_info_l {
+	width:372px;
+	float:left;
+	padding-top:24px;
+}
+.login_form_info_item {
+	height:35px;
+}
+.login_form_info_item span {
+	width:115px;
+	float:left;
+	display:block;
+	text-align:right;
+	font-size:14px;
+	padding-top:3px;
+}
+.login_form_info_item_input {
+	float:right;
+	text-align:left;
+	width:252px;
+}
+.login_form_info_item_text {
+	height:24px;
+	background:url(../images/login_form_info_item_text.gif) repeat-x;
+	width:250px;
+	border:1px #bcbcbc solid;
+}
+.login_form_info_item_text_active {
+	height:24px;
+	background:url(../images/login_form_info_item_text.gif) repeat-x;
+	width:250px;
+	border:1px #ce0b09 solid;
+}
+.login_form_info_item a:link , .login_form_info_item a:visited {
+	background:url(../images/login_form_info_item_a.gif) repeat-x;
+	border:1px #c7c7c7 solid;
+	padding:5px 10px;
+	font-weight:bold;
+	color:#333;
+}
+
+
+.login_form_info_r {
+	width:133px;
+	float:right;
+	padding-top:23px;
+}
+.login_form_submit {
+	width:98px;
+	height:61px;
+	background:url(../images/login_form_submit.gif) no-repeat;
+	border:none;
+}
 .login_form_reg {
 	width:714px;
 	border-top:1px #dddddd solid;
@@ -253,6 +306,272 @@ a:active {
 	color:#ffffff;
 }
 
+
+/* getpassword_main */
+.getpassword_main {
+	width:795px;
+	height:297px;
+	border:1px #dedede solid;
+	margin:20px auto;
+	background:url(../images/getpassword_main_bg.gif) right bottom no-repeat;
+}
+.getpassword_main_title {
+	height:71px;
+	border-bottom:1px #dedede solid;
+	background:#f2f2f2;
+	margin-bottom:20px;
+}
+.getpassword_main_title h3 {
+	font-size:16px;
+	padding-top:12px;
+	height:32px;
+	padding-left:20px;
+	color:#a40001;
+}
+.getpassword_main_title p {
+	padding-left:20px;
+}
+.getpassword_main_form {
+	width:370px;
+	padding-left:20px;
+}
+.getpassword_main_submit {
+	width:86px;
+	height:25px;
+	background:url(../images/getpassword_main_submit.gif) no-repeat;
+	border:none;
+	color:#FFFFFF;
+	line-height:25px;
+}
+
+/* reg_main */
+.reg_main_top {
+	width:792px;
+	margin:0px auto;
+	height:29px;
+	overflow:hidden;
+	margin-top:20px;
+}
+.reg_main {
+	width:790px;
+	margin:0px auto;
+	height:420px;
+	border:1px #dedede solid;
+	margin-bottom:20px;
+}
+.reg_main_title {
+	height:71px;
+	border-bottom:1px #dedede solid;
+	background:#f2f2f2;
+	margin-bottom:20px;
+}
+.reg_main_title h3 {
+	font-size:16px;
+	padding-top:12px;
+	height:32px;
+	padding-left:20px;
+	color:#a40001;
+}
+.reg_main_title p {
+	padding-left:20px;
+}
+.reg_main_form {
+	width:370px;
+	padding-left:20px;
+}
+.reg_main_submit {
+	width:142px;
+	height:25px;
+	background:url(../images/reg_main_submit.gif) no-repeat;
+	border:none;
+	color:#FFFFFF;
+	line-height:25px;
+}
+.reg_main_succesd {
+	width:790px;
+	margin:0px auto;
+	height:100px;
+	border:1px #dedede solid;
+	margin-bottom:20px;
+	text-align:center;
+	background:url(../images/reg_main_succesd_bg.gif) no-repeat 320px 30px;
+	padding-top:130px;
+}
+
+/* member_main */
+.member_main {
+	width:964px;
+	margin:0px auto;
+}
+.member_menu {
+	width:200px;
+	float:left;
+}
+.member_menu_title {
+	height:28px;
+	line-height:28px;
+	background:url(../images/member_menu_title_bg.gif) no-repeat;
+	padding-left:30px;
+	font-weight:bold;
+	font-size:13px;
+	color:#FFFFFF;
+}
+.member_menu ul {
+	border:1px #c3d5df solid;
+	border-top:none;
+	padding:10px 0px;
+}
+.member_menu ul li {
+	padding-left:28px;
+	height:31px;
+	line-height:31px;
+}
+.member_menu ul li a.active:link , .member_menu ul li a.active:visited {
+	color:#d82427;
+}
+
+.member_body {
+	width:750px;
+	float:right;
+	border:1px #c6d7df solid;
+	background:#fff;
+}
+.member_body_title {
+	width:694px;
+	height:23px;
+	padding-left:7px;
+	padding-top:16px;
+	color:#c30000;
+	font-weight:bold;
+	margin:0px auto;
+	background:url(../images/member_body_title_bg.gif) no-repeat;
+}
+.member_info {
+	height:40px;
+	border-bottom:1px #7f7f7f dashed;
+	width:694px;
+	margin:0px auto;
+	line-height:40px;
+}
+.member_info span {
+	width:130px;
+	height:25px;
+	float:left;
+	display:block;
+	text-align:right;
+}
+.member_info_input {
+	width:560px;
+	float:right;
+}
+.member_info_input_text {
+	background:url(../images/member_info_input_text_bg.gif) repeat-x;
+	height:20px;
+	border:1px #c0c0c0 solid;
+	width:155px;
+	margin-top:10px;
+}
+.member_info_input_submit {
+	width:65px;
+	height:25px;
+	text-align:center;
+	color:#FFFFFF;
+	background:url(../images/member_info_input_submit.gif) no-repeat;
+	border:none;
+}
+.member_info_input_reset {
+	width:65px;
+	height:25px;
+	text-align:center;
+	color:#333;
+	background:url(../images/member_info_input_reset.gif) no-repeat;
+	border:none;
+}
+
+/* member_cart */
+.member_cart {
+	width:906px;
+	margin:0px auto;
+}
+.member_cart h3 {
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+}
+.member_cart table {
+	width:906px;
+	border-top:1px #bcd7ec solid;
+	border-left:1px #bcd7ec solid;
+}
+.member_cart table thead {
+	height:30px;
+	background:#e8f2f4;
+	color:#666666;
+}
+.member_cart table td , .member_cart table th {
+	border-right:1px #bcd7ec solid;
+	border-bottom:1px #bcd7ec solid;
+	text-align:center;
+}
+.member_cart table td {
+	height:90px;
+}
+.member_cart table a:link , .member_cart table a:visited {
+	color:#3168cc;
+}
+.member_cart_text {
+	width:39px;
+	height:19px;
+	text-align:center;
+	border:1px #a5acb2 solid;
+}
+.cart_product {
+	width:320px;
+	height:60px;
+	overflow:hidden;
+	margin:0px auto;
+}
+.cart_product_img {
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	float:left;
+}
+.cart_product_img img {
+	width:58px;
+	height:58px;
+	border:1px #a6a7a9 solid;
+}
+.cart_product_content {
+	width:240px;
+	float:right;
+	padding-right:10px;
+	overflow:hidden;
+	line-height:22px;
+	text-align:left;
+}
+.cart_button_l {
+	width:550px;
+	float:left;
+	text-align:left;
+	padding-left:20px;
+	padding-top:5px;
+}
+.cart_button_m {
+	width:200px;
+	float:left;
+	color:#ff6501;
+	font-weight:bold;
+	padding-top:10px;
+}
+.cart_button_r {
+	width:120px;
+	float:right;
+}
+.cart_button_r span {
+	vertical-align:middle;
+	padding-right:20px;
+}
 /* footer */
 .footer {
 	width:965px;
