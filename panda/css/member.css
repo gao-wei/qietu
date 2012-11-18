@@ -668,42 +668,6 @@ a:active {
 
 
 /* 二级导航 */
-#nav_menu {
-	width:500px;
-	float:left;
-	padding-left:20px;
-}
-#nav_menu li {
-	float:left;
-	width:86px;
-	text-align:center;
-	line-height:34px;
-	margin:0px 5px;
-}
-#nav_menu li a:link , #nav_menu li a:visited {
-	width:86px;
-	height:34px;
-	overflow:hidden;
-	color:#d93d40;
-	font-weight:bold;
-	font-size:14px;
-	display:block;
-}
-#nav_menu li a:hover {
-	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
-	color:#FFFFFF;
-	color:#FFFFFF;
-}
-#nav_menu li a.active:link , #nav_menu a.active:visited {
-	width:86px;
-	height:34px;
-	overflow:hidden;
-	background:url(../images/nav_li_bg.gif) no-repeat 0px 5px;
-	color:#FFFFFF;
-	font-weight:bold;
-	font-size:14px;
-	display:block;
-}
 .category_all {
 	width:235px;
 	float:left;
