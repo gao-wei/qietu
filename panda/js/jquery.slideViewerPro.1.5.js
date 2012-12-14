@@ -41,7 +41,7 @@ jQuery.fn.slideViewerPro = function(settings) {
 			thumbsActiveBorderOpacity: 1.0, // could be 0, 0.1 up to 1.0
 			easeTime: 750,
 			asTimer: 4000,
-			thumbs: 5,
+			thumbs: 4,
 			thumbsPercentReduction: 100,
 			thumbsVis: true,
 			easeFunc: "easeInOutExpo",
