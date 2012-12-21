@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>奥瑞思官方网站</title>
+<link href="style/Style.css" type="text/css" rel="stylesheet" />
+<script src="js/correctpng.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	jQuery.navlevel2 = function(level1,dytime) {
+		
+	  $(level1).mouseenter(function(){
+		  varthis = $(this);
+		  delytime=setTimeout(function(){
+			varthis.find('ul').slideDown();
+		},dytime);
+		
+	  });
+	  $(level1).mouseleave(function(){
+		 clearTimeout(delytime);
+		 $(this).find('ul').slideUp();
+	  });
+	  
+	};
+  $.navlevel2("li.mainlevel",200);
+});
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
+  <div class="menu">
+    <ul>
+      <li><a href="./">首 页</a></li>
+      <li class="mainlevel"><a href="products.html">产品中心</a>
+      <ul>
+        	<li><a href="products_list.html">- 添加剂</a></li>
+            <li><a href="products_list.html">- 预混料</a></li>
+            <li><a href="products_list.html">- 添加剂</a></li>
+            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        </ul>
+      </li>
+      <li class="mainlevel"><a href="team.html">技术支持</a>
+      <ul>
+        	<li><a href="products_list.html">- 添加剂</a></li>
+            <li><a href="products_list.html">- 预混料</a></li>
+            <li><a href="products_list.html">- 添加剂</a></li>
+            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        </ul></li>
+      <li><a href="sale.html">销售中心</a></li>
+      <li class="mainlevel"><a href="news_list.html">绿色生命</a>
+      <ul>
+        	<li><a href="products_list.html">- 添加剂</a></li>
+            <li><a href="products_list.html">- 预混料</a></li>
+            <li><a href="products_list.html">- 添加剂</a></li>
+            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        </ul></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <div class="top_right">
+    <div class="top_right_top"><a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">加为收藏</a></div>
+    <div class="top_right_bot">
+      <table width="201" border="0" cellspacing="0" cellpadding="0">
+        <form method="" action="">
+          <tr>
+            <td width="150"><input type="text" name="" class="input1" /></td>
+            <td width="51"><input type="image" src="images/search_button.gif" class="btn1"/></td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="banner"> <img src="images/banner.png" width="980" height="416"/> </div>
+<div class="index_main">
+  <div class="index_main_info">
+    <div class="main_title">绿色生命</div>
+    <div class="main_text">
+      <div class="main_text_left"><a href="#"><img src="images/green_img.jpg" width="115" height="73"/></a></div>
+      <div class="main_text_right">
+        <h2><a href="#">·北京澳瑞思在日照举办养殖技术座谈会</a></h2>
+        非洲大陆正在迅速城市化，每年花在木炭烹饪上元，因此CleanStar的业务模式在。<br />
+        <a href="#">详情&gt;&gt;</a> </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="index_main_info">
+    <div class="main_title"></div>
+    <div class="main_text">
+      <div class="main_text_left"><a href="#"><img src="images/green_img.jpg" width="115" height="73"/></a></div>
+      <div class="main_text_right">
+        <h2><a href="#">·北京澳瑞思在日照举办养殖技术座谈会</a></h2>
+        非洲大陆正在迅速城市化，每年花在木炭烹饪上元，因此CleanStar的业务模式在。<br />
+        <a href="#">详情&gt;&gt;</a> </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="bottom">
+  <div class="bottom_left"><a href="#">全球资讯订阅</a>&nbsp;|&nbsp;<a href="#">网站地图</a>&nbsp;|&nbsp;<a href="#">联系我们</a>&nbsp;|&nbsp;<a href="#">澳瑞思在全球</a></div>
+  <div class="bottom_right">版权所有&nbsp;北京澳瑞思生物营养技术有限公司&nbsp;<a href="#">京ICP备15152121号</a></div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>
