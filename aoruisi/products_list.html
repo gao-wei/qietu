@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>奥瑞思官方网站</title>
+<link href="style/Style.css" type="text/css" rel="stylesheet" />
+<script src="js/correctpng.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/ddaccordion.js" type="text/javascript"></script>
+<script src="js/left_dh.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	jQuery.navlevel2 = function(level1,dytime) {
+		
+	  $(level1).mouseenter(function(){
+		  varthis = $(this);
+		  delytime=setTimeout(function(){
+			varthis.find('ul').slideDown();
+		},dytime);
+		
+	  });
+	  $(level1).mouseleave(function(){
+		 clearTimeout(delytime);
+		 $(this).find('ul').slideUp();
+	  });
+	  
+	};
+  $.navlevel2("li.mainlevel",200);
+});
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
+  <div class="menu">
+    <ul>
+      <li><a href="./">首 页</a></li>
+      <li class="mainlevel"><a href="products.html">产品中心</a>
+      <ul>
+        	<li><a href="products_list.html">- 添加剂</a></li>
+            <li><a href="products_list.html">- 预混料</a></li>
+            <li><a href="products_list.html">- 添加剂</a></li>
+            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        </ul>
+      </li>
+      <li><a href="team.html">技术支持</a></li>
+      <li><a href="sale.html">销售中心</a></li>
+      <li><a href="news_list.html">绿色生命</a></li>
+      <li><a href="about.html">关于我们</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <div class="top_right">
+    <div class="top_right_top"><a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">加为收藏</a></div>
+    <div class="top_right_bot">
+      <table width="201" border="0" cellspacing="0" cellpadding="0">
+        <form method="" action="">
+          <tr>
+            <td width="150"><input type="text" name="" class="input1" /></td>
+            <td width="51"><input type="image" src="images/search_button.gif" class="btn1"/></td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="ny_main">
+<div class="ny_m_left">
+<div class="ny_m_left_z">
+<img src="images/products_01.png" width="150" height="353"/>
+<div class="ny_m_left_z_01">
+<p>产品中心</p>
+<div class="dh_main">
+<h3 class="menuheader"><a href="#">事业领域</a></h3>
+<h3 class="menuheader expandable"><a href="#">产品介绍</a></h3>
+<ul class="categoryitems">
+<li>-&nbsp;<a href="#">添加剂</a></li>
+<li>-&nbsp;<a href="#">预混料</a></li>
+</ul>
+<h3 class="menuheader"><a href="#">品质保障</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="ny_m_middle">
+<div class="line"></div>
+<div class="ny_m_info">
+<p>【某某某某】</p>
+<div class="ny_m_info_text">
+<a href="products_view.html"><img src="images/products_02.gif" width="93" height="62"/></a>
+<div class="ny_m_info_text_r">
+<h2><a href="products_view.html">某某某某</a></h2>
+富含植物类黄酮、多糖、多酚和有机酸等有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="ny_m_info">
+<div class="ny_m_info_text">
+<a href="#"><img src="images/products_03.gif" width="93" height="62"/></a>
+<div class="ny_m_info_text_r">
+<h2><a href="#">某某某某</a></h2>
+富含植物类黄酮、多糖、多酚和有机酸等有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="ny_m_info">
+<div class="ny_m_info_text">
+<a href="#"><img src="images/products_04.gif" width="93" height="62"/></a>
+<div class="ny_m_info_text_r">
+<h2><a href="#">某某某某</a></h2>
+富含植物类黄酮、多糖、多酚和有机酸等有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="page">
+<a href="#">首页</a><a href="#">上一页</a><a href="#" class="checked">1</a><a href="#">下一页</a><a href="#">尾页</a>
+</div>
+
+</div>
+<div class="ny_m_right">
+<img src="images/products_06.png" width="321" height="308"/>
+<div class="tact_us">
+<p>联系我们</p><br />
+北京澳瑞思生物营养技术有限公司<br />
+电话：010—63740337；010-83670886<br />
+传真：010—63721880<br /><br />
+
+公司地址：北京市丰台区科学城百强大道宝隆公寓1—2402 <br />
+公司邮编：100070；<br /><br />
+
+E-Mail:ares1880@126.com<br />
+
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="bottom ny_bottom">
+  <div class="bottom_left"><a href="#">网站地图</a>&nbsp;|&nbsp;<a href="#">联系我们</a>&nbsp;|&nbsp;<a href="#">澳瑞思在中国</a></div>
+  <div class="bottom_right">版权所有&nbsp;北京澳瑞思生物营养技术有限公司&nbsp;<a href="#">京ICP备15152121号</a></div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

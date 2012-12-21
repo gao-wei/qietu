@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* 通用样式 */
+*{ margin:0px; padding:0px;}
+body{font-family:"宋体"; font-size:12px; background:url(../images/body_bj.gif) no-repeat center top;}
+ul li{list-style:none;}
+img{border:none;}
+a{text-decoration:none; star:expression(this.onFocus=this.blur()); }
+a:focus{outline:none; -moz-outline:none;}
+.clear{clear:both; height:1px; overflow:hidden;}
+.top,.banner,.index_main,.bottom,.ny_main{width:980px; margin:0px auto;}
+
+/* 首页样式 */
+.top{height:83px;}
+.logo{width:224px; display:inline; margin-top:19px;float:left;}
+.menu{width:510px; height:27px; margin-top:56px; margin-left:20px; display:inline; float:left;}
+.menu ul li{width:85px; float:left;}
+.menu ul li a{font-family:"微软雅黑"; font-size:12px; color:#016502; font-weight:bolder; width:85px; height:27px; line-height:27px; text-align:center; display:block;}
+.menu ul li a:hover{background:url(../images/li_bj01.gif) no-repeat; color:#fff;}
+.menu ul li ul{display:none; position:absolute;}
+.menu ul li ul li{width:85px; line-height:24px; background:url(../images/li_bj02.png) no-repeat; _background:#d6e0e9;_filter:alpha(opacity=68);   float:none; border-top:1px #c4d1d7 solid; border-bottom:1px #ddeaf0 solid;}
+.menu ul li ul li.cur1{border-bottom:2px #4c9452 solid;}
+.menu ul li ul li a{font-family:"宋体"; font-size:12px; color:#000; font-weight:normal; width:85px; height:24px; line-height:24px; background:url(../images/a_bj.gif) no-repeat 9px 9px; display:block;}
+.menu ul li ul li a:hover{background:url(../images/a_bj.gif) no-repeat 9px 9px; color:#000;}
+.top_right{width:204px; margin-left:22px; height:83px; float:left;}
+.top_right_top{color:#787677; text-align:right; height:59px; line-height:59px;}
+.top_right_top a{color:#787677;}
+.top_right_bot{width:204px; height:24px;}
+.input1{width:147px; height:22px; line-height:22px; padding-left:4px; border:1px #bdbdbd solid; border-right:none; border-right:none;}
+.btn1{ width:51px;}
+.banner{height:416px; margin-top:34px;}
+.index_main{width:918px; height:117px; overflow:hidden; padding-left:62px; margin-top:47px;}
+.index_main_info{width:404px; height:117px; overflow:hidden; float:left; margin-right:50px; display:inline;}
+.main_title{font-family:"微软雅黑"; font-size:18px; color:#006401; height:37px; text-align:left; font-weight:bolder;}
+.main_text{width:404px; height:80px; overflow:hidden;}
+.main_text_left{width:121px; height:79px; float:left;}
+.main_text_left a img{padding:2px; border:1px #d5d5d5 solid;}
+.main_text_left a:hover img{border:1px #006402 solid;}
+.main_text_right{width:273px; padding-left:10px; float:left; color:#555; line-height:16px;}
+.main_text_right h2 a,.news_info dl dt a{font-size:12px; color:#555;}
+.main_text_right h2 a:hover,.ny_m_info_text_r h2 a:hover,.page a:hover,.news_info dl dt a:hover,.team_table a:hover{color:#006402; text-decoration:none;}
+.main_text_right h2{margin-bottom:4px;}
+.main_text_right a{color:#006402; margin-top:4px; display:inline-block;}
+.top_right_top a:hover,.main_text_right a:hover,.bottom_left a:hover,.bottom_right a:hover{text-decoration:underline;}
+.bottom{width:988px; height:31px; border:1px #e6e6e6 solid; background:url(../images/bottom_bj.jpg) repeat-x; margin-top:46px; margin-bottom:70px;}
+.bottom_left{width:542px; padding-left:12px; line-height:31px; color:#5b5b5b; text-align:left; float:left;}
+.bottom_left a,.bottom_right a{color:#5b5b5b;}
+.bottom_right{width:416px; line-height:31px; text-align:right; color:#5b5b5b; padding-right:12px; float:left;}
+
+/* 产品中心样式 */
+.ny_main{width:980px; height:auto; background:url(../images/products_07.gif) no-repeat left bottom; margin-top:34px;}
+.ny_m_left{width:150px; height:353px; overflow:hidden; float:left; margin-right:42px;}
+.ny_m_left_z{width:150px; height:353px; position:relative;}
+.ny_m_left_z_01{position:absolute; top:0px; left:0px; z-index:9999;}
+.dh_main{padding:12px 0px 0px 38px;}
+.ny_m_left_z_01 p{font-family:"微软雅黑"; font-size:21px; color:#fff; display:inline-block; margin:34px 0px 0px 41px;}
+.ny_m_left_z_01 h3{width:83px; height:28px; line-height:28px;}
+.ny_m_left_z_01 ul{width:100px;}
+.menuheader,.openheader,menuheader1{width:83px; line-height:28px; padding-left:17px; background:url(../images/products_09.png) no-repeat 1px 9px; _background:url(../images/products_09_1.png) no-repeat 1px 9px; cursor:hand; cursor:pointer;}
+.openheader,.menuheader1{background:url(../images/products_08.png) no-repeat 1px 9px; _background:url(../images/products_08_1.png) no-repeat 1px 9px;}
+.ny_m_left_z_01 ul li a{color:#fff;}
+.menuheader a,.menuheader1 a{font-family:"微软雅黑"; font-size:14px; color:#fff;}
+.openheader a,.menuheader1 a{color:#deff02;}
+.ny_m_left_z_01 ul li{line-height:22px; color:#fff; background:none; padding-left:17px;}
+.ny_m_left_z_01 ul li a{color:#fff; font-family:"宋体"; font-size:12px;}
+.ny_bottom{margin-top:0px;}
+.ny_m_middle{width:425px; float:left; margin-right:42px; margin-top:5px;}
+.ny_m_info{width:425px; height:auto; background:url(../images/products_05.gif) no-repeat left bottom; padding:20px 0px;}
+.ny_m_info p{font-size:14px; font-family:"微软雅黑"; color:#278212; font-weight:bolder; margin-bottom:14px;}
+.ny_m_info_text a img{float:left; margin-right:9px;}
+.ny_m_info_text_r{width:323px; color:#555756; line-height:15px; float:left;}
+.ny_m_info_text_r h2,.news_c_text h2{font-size:12px; margin-bottom:4px;}
+.ny_m_info_text_r h2 a,.news_c_text h2 a{color:#333;}
+.ny_m_right{width:321px; float:left;}
+.tact_us{width:321px; margin-top:10px; color:#777; line-height:20px; padding-bottom:68px;}
+.tact_us p{height:40px; line-height:40px; font-family:"微软雅黑"; font-size:14px; color:#333; font-weight:bolder; border-bottom:1px #dbdbdb solid;}
+
+/* 产品列表样式 */
+.line{width:425px; height:1px; background:url(../images/products_05_1.gif) no-repeat;}
+.page{width:425px; height:20px; font-family:"宋体"; text-align:center; margin-top:20px;}
+.page a{display:inline-block; height:20px; line-height:20px; color:#6e6e6e; margin:0px 7px;}
+.page a.checked,.page a.wait_checked{width:20px; height:20px; text-align:center; color:#fff; font-size:14px; background:url(../images/products_11.gif) no-repeat; margin:0px 3px;}
+.page a.wait_checked{color:#555; background:url(../images/products_13.gif) no-repeat;}
+
+/* 产品详情样式 */
+.ny_m_info_text_r1{width:206px;}
+.ny_m_info_text_r1 p{line-height:22px; font-family:"宋体"; font-size:12px; font-weight:normal; margin-bottom:0px; color:#555;}
+.cp_view{width:425px; line-height:20px; color:#555; padding:15px 0px 68px 0px;}
+
+/* 新闻列表样式 */
+.new_center{width:403px; height:94px; border:1px #cfe0e8 solid; background:#fff; padding:10px;}
+.new_center a img{float:left; margin-right:10px;}
+.news_c_text{width:252px; height:94px; overflow:hidden; float:left; line-height:18px; color:#555;}
+.news_c_text a.more_read{display:inline-block; font-weight:bold; color:#0a970d; margin-top:8px;}
+.news_info dl{width:425px; margin-top:10px;}
+.news_info dl dt{width:352px; height:30px; line-height:30px; background:url(../images/products_05.gif) no-repeat left bottom; color:#555; padding-left:8px; float:left;}
+.news_info dl dd{width:65px; height:30px; line-height:30px; background:url(../images/products_05.gif) no-repeat left bottom; color:#555; float:left;}
+
+/* 新闻详情样式 */
+.news_info{padding:10px 0px 68px 0px;}
+.title{width:425px; height:36px; line-height:36px; font-family:"微软雅黑"; font-size:21px; color:#333; text-align:center;}
+.news_come{line-height:24px; text-align:center; color:#555; margin-bottom:15px;}
+.news_info_text{line-height:23px; color:#555;}
+
+/* 销售中心样式 */
+.sale_info{width:425px; padding:35px 0px 68px 0px; color:#555; line-height:22px;}
+.sale_info p{height:36px; line-height:36px; font-family:"微软雅黑"; font-size:14px; color:#0a970d; font-weight:bolder; background:url(../images/products_05.gif) no-repeat left bottom; margin-bottom:10px;}
+
+/* 专家介绍样式 */
+.team,.about{width:423px; height:auto; border:1px #cfe0e8 solid; background:#fff;}
+.team_info{width:393px; padding:15px ; height:174px; background:url(../images/products_05.gif) no-repeat left bottom;}
+.team_info a img{float:left; margin-right:13px;}
+.team_table{width:246px; float:left; color:#555; line-height:20px;}
+.team_table a{color:#333; font-weight:bold;}
+.team_space{height:25px;}
+
+/* 资质荣誉样式 */
+.about{width:407px; padding:6px 8px;}
+.about_zzry{width:193px; height:132px; float:left; margin:4px 5px; display:inline;}
