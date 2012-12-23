@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* global */
+body { 
+	margin:0px auto; 
+	padding:0px; 
+	font-size:12px;
+	font-family:"微软雅黑","宋体",Arial;
+	background:url(../images/body_bg.jpg) top;
+}
+div, form, img, ul, ol, li, dl, dt, dd, p{ 
+	margin:0px; 
+	padding:0px; 
+	border:0; 
+}
+li { 
+	list-style:none; 
+}
+h1, h2, h3, h4, h5, h6, input { 
+	margin:0px; 
+	padding:0px; 
+	font-size:12px; 
+}
+table, td, tr, th { 
+	font-size:12px; 
+}
+
+a:link { 
+	color: #666; 
+	text-decoration:none; 
+}
+a:visited { 
+	color: #666; 
+	text-decoration:none; 
+}
+a:hover { 
+	color: #999; 
+	text-decoration:none; 
+}
+a:active { 
+	color: #999; 
+	text-decoration:none; 
+}
+.spaceline { 
+	clear:both; 
+	height:10px;
+	overflow:hidden;
+}
+.spaceline_5 { 
+	clear:both; 
+	height:5px;
+	overflow:hidden;
+}
+.spaceline_8 { 
+	clear:both; 
+	height:8px;
+	overflow:hidden;
+}
+.spaceline_15 { 
+	clear:both; 
+	height:15px;
+	overflow:hidden;
+}
+.spaceline_30 { 
+	clear:both; 
+	height:30px;
+	overflow:hidden;
+}
+.clear {
+	clear: both; 
+	font-size:0px; 
+	width:0px; 
+	height:0px; 
+	line-height:0px; 
+	padding:0px !important;
+	margin:0px !important;
+}
+
+/* bird */
+.bird {
+	width:461px;
+	height:544px;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:9;
+}
+/* body_main */
+.body_main {
+	z-index:99;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+}

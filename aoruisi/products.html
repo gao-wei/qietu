@@ -15,6 +15,7 @@ $(document).ready(function(){
 	  $(level1).mouseenter(function(){
 		  varthis = $(this);
 		  delytime=setTimeout(function(){
+			varthis.find('a:first').addClass('hoverA');
 			varthis.find('ul').slideDown();
 		},dytime);
 		
@@ -22,6 +23,7 @@ $(document).ready(function(){
 	  $(level1).mouseleave(function(){
 		 clearTimeout(delytime);
 		 $(this).find('ul').slideUp();
+		 $(this).find('a:first').removeClass('hoverA');
 	  });
 	  
 	};
@@ -34,19 +36,19 @@ $(document).ready(function(){
   <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
   <div class="menu">
     <ul>
-      <li><a href="./">首 页</a></li>
-      <li class="mainlevel"><a href="products.html">产品中心</a>
+      <li><a href="#">首 页</a></li>
+      <li class="mainlevel"><a href="#">产品中心</a>
       <ul>
-        	<li><a href="products_list.html">- 添加剂</a></li>
-            <li><a href="products_list.html">- 预混料</a></li>
-            <li><a href="products_list.html">- 添加剂</a></li>
-            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        	<li><a href="#">- 添加剂</a></li>
+            <li><a href="#">- 预混料</a></li>
+            <li><a href="#">- 添加剂</a></li>
+            <li class="cur1"><a href="#">- 预混料</a></li>
         </ul>
       </li>
-      <li><a href="team.html">技术支持</a></li>
-      <li><a href="sale.html">销售中心</a></li>
-      <li><a href="news_list.html">绿色生命</a></li>
-      <li><a href="about.html">关于我们</a></li>
+      <li><a href="#">技术支持</a></li>
+      <li><a href="#">销售中心</a></li>
+      <li><a href="#">绿色生命</a></li>
+      <li><a href="#">关于我们</a></li>
     </ul>
     <div class="clear"></div>
   </div>
@@ -75,8 +77,8 @@ $(document).ready(function(){
 <h3 class="menuheader"><a href="#">事业领域</a></h3>
 <h3 class="menuheader expandable"><a href="#">产品介绍</a></h3>
 <ul class="categoryitems">
-<li>-&nbsp;<a href="products_list.html">添加剂</a></li>
-<li>-&nbsp;<a href="products_list.html">预混料</a></li>
+<li>-&nbsp;<a href="#">添加剂</a></li>
+<li>-&nbsp;<a href="#">预混料</a></li>
 </ul>
 <h3 class="menuheader"><a href="#">品质保障</a></h3>
 </div>
@@ -88,9 +90,9 @@ $(document).ready(function(){
 <div class="ny_m_info">
 <p>【植物提取物添加剂】</p>
 <div class="ny_m_info_text">
-<a href="products_view.html"><img src="images/products_10.gif" width="93" height="62"/></a>
+<a href="#"><img src="images/products_10.gif" width="93" height="62"/></a>
 <div class="ny_m_info_text_r">
-<h2><a href="products_view.html">某某某某</a></h2>
+<h2><a href="#">某某某某</a></h2>
 富含植物类黄酮、多糖、多酚和有机酸等<!---->有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
 </div>
 <div class="clear"></div>
@@ -99,9 +101,9 @@ $(document).ready(function(){
 <div class="ny_m_info">
 <p>【畜禽预混料】</p>
 <div class="ny_m_info_text">
-<a href="products_view.html"><img src="images/products_02.gif" width="93" height="62"/></a>
+<a href="#"><img src="images/products_02.gif" width="93" height="62"/></a>
 <div class="ny_m_info_text_r">
-<h2><a href="products_view.html">某某某某</a></h2>
+<h2><a href="#">某某某某</a></h2>
 富含植物类黄酮、多糖、多酚和有机酸等有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
 </div>
 <div class="clear"></div>
@@ -109,9 +111,9 @@ $(document).ready(function(){
 </div>
 <div class="ny_m_info">
 <div class="ny_m_info_text">
-<a href="products_view.html"><img src="images/products_03.gif" width="93" height="62"/></a>
+<a href="#"><img src="images/products_03.gif" width="93" height="62"/></a>
 <div class="ny_m_info_text_r">
-<h2><a href="products_view.html">某某某某</a></h2>
+<h2><a href="#">某某某某</a></h2>
 富含植物类黄酮、多糖、多酚和有机酸等有效成分，主要由黄芩、蒲公英、大青叶、白头翁、益母草等植物提取物组成。
 </div>
 <div class="clear"></div>
