@@ -8,65 +8,78 @@
 <script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/ddaccordion.js" type="text/javascript"></script>
 <script src="js/left_dh.js" type="text/javascript"></script>
-<script type="text/javascript">
+<script type="text/javascript" language="javascript">
 $(document).ready(function(){
 	jQuery.navlevel2 = function(level1,dytime) {
-		
-	  $(level1).mouseenter(function(){
-		  varthis = $(this);
-		  delytime=setTimeout(function(){
-			varthis.find('a:first').addClass('hoverA');
-			varthis.find('ul').slideDown();
-		},dytime);
-		
-	  });
-	  $(level1).mouseleave(function(){
-		 clearTimeout(delytime);
-		 $(this).find('ul').slideUp();
-		 $(this).find('a:first').removeClass('hoverA');
-	  });
-	  
+		$(level1).mouseenter(function(){
+			varthis = $(this);
+			delytime=setTimeout(function(){
+				varthis.find('a:first').addClass('hoverA');
+				varthis.find('ul').slideDown();
+			},dytime);
+		});
+		$(level1).mouseleave(function(){
+			clearTimeout(delytime);
+			$(this).find('ul').slideUp();
+			$(this).find('a:first').removeClass('hoverA');
+		});
 	};
-  $.navlevel2("li.mainlevel",200);
+	$.navlevel2("li.mainlevel",200);
 });
 </script>
 </head>
 <body>
 <div class="top">
-  <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
-  <div class="menu">
-    <ul>
-      <li><a href="#">首 页</a></li>
-      <li class="mainlevel"><a href="#">产品中心</a>
-      <ul>
-        	<li><a href="#">- 添加剂</a></li>
-            <li><a href="#">- 预混料</a></li>
-            <li><a href="#">- 添加剂</a></li>
-            <li class="cur1"><a href="#">- 预混料</a></li>
+    <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
+    <div class="menu">
+        <ul>
+            <li><a href="./">首 页</a></li>
+            <li class="mainlevel"><a href="products.html">产品中心</a>
+                <ul>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li><a href="products_list.html">- 预混料</a></li>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+                </ul>
+            </li>
+            <li><a href="#">技术支持</a>
+                <ul>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li><a href="products_list.html">- 预混料</a></li>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+                </ul>
+            </li>
+            <li><a href="sale.html">销售中心</a></li>
+            <li><a href="news_list.html">绿色生命</a>
+                <ul>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li><a href="products_list.html">- 预混料</a></li>
+                    <li><a href="products_list.html">- 添加剂</a></li>
+                    <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">关于我们</a></li>
         </ul>
-      </li>
-      <li><a href="#">技术支持</a></li>
-      <li><a href="#">销售中心</a></li>
-      <li><a href="#">绿色生命</a></li>
-      <li><a href="#">关于我们</a></li>
-    </ul>
-    <div class="clear"></div>
-  </div>
-  <div class="top_right">
-    <div class="top_right_top"><a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">加为收藏</a></div>
-    <div class="top_right_bot">
-      <table width="201" border="0" cellspacing="0" cellpadding="0">
-        <form method="" action="">
-          <tr>
+        <div class="clear"></div>
+    </div>
+    <div class="top_right">
+    	<div class="top_right_top"><a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">加为收藏</a></div>
+        <div class="top_right_bot">
+            <table width="201" border="0" cellspacing="0" cellpadding="0">
+            <form method="" action="">
+            <tr>
             <td width="150"><input type="text" name="" class="input1" /></td>
             <td width="51"><input type="image" src="images/search_button.gif" class="btn1"/></td>
-          </tr>
-        </form>
-      </table>
+            </tr>
+            </form>
+            </table>
+        </div>
     </div>
-  </div>
-  <div class="clear"></div>
+    <div class="clear"></div>
 </div>
+
+
 <div class="ny_main">
 <div class="ny_m_left">
 <div class="ny_m_left_z">
@@ -84,11 +97,11 @@ $(document).ready(function(){
 <div class="ny_m_middle">
 <div class="news_info">
 <div class="new_center">
-<a href="#"><img src="images/news_01.gif" width="141" height="94"/></a>
+<a href="news_view.html"><img src="images/news_01.gif" width="141" height="94"/></a>
 <div class="news_c_text">
-<h2><a href="#">南北美大豆市场供应衔接成焦点 </a></h2>
+<h2><a href="news_view.html">南北美大豆市场供应衔接成焦点 </a></h2>
 富含植物类黄酮、多糖、多酚和有机酸等有效成主要由黄芩、蒲公英、大青叶、白头翁……
-<a href="#" class="more_read">查看详情&gt;&gt;</a>
+<a href="news_view.html" class="more_read">查看详情&gt;&gt;</a>
 </div>
 </div>
 <dl>
