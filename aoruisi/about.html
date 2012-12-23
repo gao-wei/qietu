@@ -15,6 +15,7 @@ $(document).ready(function(){
 	  $(level1).mouseenter(function(){
 		  varthis = $(this);
 		  delytime=setTimeout(function(){
+			varthis.find('a:first').addClass('hoverA');
 			varthis.find('ul').slideDown();
 		},dytime);
 		
@@ -22,6 +23,7 @@ $(document).ready(function(){
 	  $(level1).mouseleave(function(){
 		 clearTimeout(delytime);
 		 $(this).find('ul').slideUp();
+		 $(this).find('a:first').removeClass('hoverA');
 	  });
 	  
 	};
@@ -34,19 +36,19 @@ $(document).ready(function(){
   <div class="logo"><a href="#"><img src="images/logo.png" width="218" height="61"/></a></div>
   <div class="menu">
     <ul>
-     <li><a href="./">首 页</a></li>
-      <li class="mainlevel"><a href="products.html">产品中心</a>
+      <li><a href="#">首 页</a></li>
+      <li class="mainlevel"><a href="#">产品中心</a>
       <ul>
-        	<li><a href="products_list.html">- 添加剂</a></li>
-            <li><a href="products_list.html">- 预混料</a></li>
-            <li><a href="products_list.html">- 添加剂</a></li>
-            <li class="cur1"><a href="products_list.html">- 预混料</a></li>
+        	<li><a href="#">- 添加剂</a></li>
+            <li><a href="#">- 预混料</a></li>
+            <li><a href="#">- 添加剂</a></li>
+            <li class="cur1"><a href="#">- 预混料</a></li>
         </ul>
       </li>
-      <li><a href="team.html">技术支持</a></li>
-      <li><a href="sale.html">销售中心</a></li>
-      <li><a href="news_list.html">绿色生命</a></li>
-      <li><a href="about.html">关于我们</a></li>
+      <li><a href="#">技术支持</a></li>
+      <li><a href="#">销售中心</a></li>
+      <li><a href="#">绿色生命</a></li>
+      <li><a href="#">关于我们</a></li>
     </ul>
     <div class="clear"></div>
   </div>
@@ -76,7 +78,7 @@ $(document).ready(function(){
 <ul class="categoryitems">
 <li>-&nbsp;<a href="#">企业文化</a></li>
 <li>-&nbsp;<a href="#">资质荣誉</a></li>
-<li>-&nbsp;<a href="team.html">专家介绍</a></li>
+<li>-&nbsp;<a href="#">专家介绍</a></li>
 </ul>
 <h3 class="menuheader"><a href="#">时事新闻</a></h3>
 <h3 class="menuheader"><a href="#">员工活动</a></h3>
