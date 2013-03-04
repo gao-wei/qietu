@@ -3,13 +3,154 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link type="text/css" rel="stylesheet" href="css/global.css" />
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/pngfix.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.flashSlider-1.0.js"></script>
+<script type="text/javascript" language="javascript" src="js/common.js"></script>
 <title>首页</title>
 </head>
-
 <body>
 	<div class="top"></div>
 	<div class="header">
-    	
+    	<div class="header_top">
+            <div class="logo"><a href="./" target="_blank"><Img alt="" src="images/logo.png" width="173" height="82" onload="fixPNG(this)" /></a></div>
+            <div class="header_nav">
+            	<div class="header_search">
+                	<form action="" method="post" name="search_form">
+                    	<input type="text" value="" name="keyword" class="search_form_text" />
+                        <input type="button" value="" class="search_form_button" />
+                    </form>
+                </div>
+                <div class="spaceline_20"></div>
+                <div class="nav">
+                	<ul>
+                    	<li><a href="./" title="首页" target="_blank">首&nbsp;&nbsp;页</a></li>
+                    	<li><a href="./about.html" title="公司介绍" target="_blank">公司介绍</a></li>
+                    	<li><a href="./product.html" title="产品中心" target="_blank">产品中心</a></li>
+                    	<li><a href="./" title="工程方案" target="_blank">工程方案</a></li>
+                    	<li><a href="./" title="工程案例" target="_blank">工程案例</a></li>
+                    	<li><a href="./" title="新闻中心" target="_blank">新闻中心</a></li>
+                    	<li><a href="./" title="诚邀加盟" target="_blank">诚邀加盟</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </div>
+    <div class="main">
+        <div class="banner">
+            <div id="banner">
+            <ul>
+                <li><a href="./" target="_blank" title=""><img alt="" src="images/banner_1.jpg" width="960" height="306" /></a></li>
+                <li><a href="./" target="_blank" title=""><img alt="" src="images/banner_2.jpg" width="960" height="306" /></a></li>
+                <li><a href="./" target="_blank" title=""><img alt="" src="images/banner_3.jpg" width="960" height="306" /></a></li>
+                <li><a href="./" target="_blank" title=""><img alt="" src="images/banner_4.jpg" width="960" height="306" /></a></li>
+            </ul>
+            </div>
+            <div class="banner_nav" id="banner_nav">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="spaceline"></div>
+        <div class="main_left">
+        	<div class="index_product">
+            	<ul>
+                	<li><a href="./" target="_blank" title="防腐漆"><img alt="防腐漆" src="images/fangfuqi.jpg" width="168" height="103" /></a></li>
+                	<li><a href="./" target="_blank" title="地坪漆"><img alt="地坪漆" src="images/dipingqi.jpg" width="168" height="103" /></a></li>
+                	<li><a href="./" target="_blank" title="标线漆"><img alt="标线漆" src="images/biaoxianqi.jpg" width="168" height="103" /></a></li>
+                	<li><a href="./" target="_blank" title="特种漆"><img alt="特种漆" src="images/tezhongqi.jpg" width="168" height="103" /></a></li>
+                </ul>
+            </div>
+            <div class="spaceline"></div>
+            <div class="index_news">
+            	<div class="index_news_title">
+                	<ul>
+                    	<li id="index_news_title_1" onmouseover="select_index_news(1);"><a href="./" title="公司活动" target="_blank">公司活动</a></li>
+                    	<li id="index_news_title_2" class="active" onmouseover="select_index_news(2);"><a href="./" title="行业新闻" target="_blank">行业新闻</a></li>
+                    </ul>
+                    <div class="more"><a href="./" target="_blank" title="更多"><img alt="" src="images/more.gif" width="47" height="13" /></a></div>
+                    <div class="clear"></div>
+                </div>
+            	<div class="spaceline_20"></div>
+                <div class="index_news_list">
+                	<div class="index_news_list_item" id="index_news_list_1">
+                    	<div class="index_news_list_item_img">
+                        	<div class="index_news_list_item_img_l"><a href="./" target="_blank" title=""><img alt="" src="images/index_news_list_1.jpg" width="120" height="80" /></a></div>
+                            <div class="index_news_list_item_img_r"><a href="./" target="_blank" title="">涂料行业抢占新市场品牌打造的差涂料行业抢占新市场品牌打造的差涂料行业抢占新市场品牌打造的差涂料行业抢占....[详情]</a></div>
+                        </div>
+            			<div class="spaceline"></div>
+                        <ul>
+                            <li><span>2012-12-20</span><a href="./" target="_blank" title="涂料行业抢占新市场品牌打造的差">涂料行业抢占新市场品牌打造的差</a></li>
+                            <li><span>2012-12-20</span><a href="./" target="_blank" title="如何才能打好冬季装修这场寒战">如何才能打好冬季装修这场寒战</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="index_news_list_item" id="index_news_list_2" style="display:block;">
+                    	<div class="index_news_list_item_img">
+                        	<div class="index_news_list_item_img_l"><a href="./" target="_blank" title=""><img alt="" src="images/index_news_list_2.jpg" width="120" height="80" /></a></div>
+                            <div class="index_news_list_item_img_r"><a href="./" target="_blank" title="">涂料行业抢占新市场品牌打造的差涂料行业抢占新市场品牌打造的差涂料行业抢占新市场品牌打造的差涂料行业抢占....[详情]</a></div>
+                        </div>
+            			<div class="spaceline"></div>
+                        <ul>
+                            <li><span>2012-12-20</span><a href="./" target="_blank" title="如何才能打好冬季装修这场寒战">如何才能打好冬季装修这场寒战</a></li>
+                            <li><span>2012-12-20</span><a href="./" target="_blank" title="涂料行业抢占新市场品牌打造的差">涂料行业抢占新市场品牌打造的差</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_product_list">
+            	<div class="index_product_list_title">
+                	<ul>
+                    	<li id="index_product_list_title_1" onmouseover="select_index_product_list(1);"><a href="./" title="民用涂料" target="_blank">民用涂料</a></li>
+                    	<li id="index_product_list_title_2" class="active" onmouseover="select_index_product_list(2);"><a href="./" title="工业涂料" target="_blank">工业涂料</a></li>
+                    	<li id="index_product_list_title_3" onmouseover="select_index_product_list(3);"><a href="./" title="建筑涂料" target="_blank">建筑涂料</a></li>
+                    	<li id="index_product_list_title_4" onmouseover="select_index_product_list(4);"><a href="./" title="特种涂料" target="_blank">特种涂料</a></li>
+                    </ul>
+                    <div class="more"><a href="./" target="_blank" title="更多"><img alt="" src="images/more.gif" width="47" height="13" /></a></div>
+                    <div class="clear"></div>
+                </div>
+            	<div class="spaceline_20"></div>
+                <div class="index_product_list_list">
+                	<div class="index_product_list_item" id="index_product_list_1">index_product_list_1</div>
+                	<div class="index_product_list_item" id="index_product_list_2" style="display:block;">index_product_list_2</div>
+                	<div class="index_product_list_item" id="index_product_list_3">index_product_list_3</div>
+                	<div class="index_product_list_item" id="index_product_list_4">index_product_list_4</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="index_sider">
+    		<div class="spaceline"></div>
+        	<div class="telephone"><img alt="" src="images/telephone.jpg" width="191" height="73" /></div>
+    		<div class="spaceline"></div>
+        	<div class="joinus"><img alt="" src="images/joinus.jpg" width="191" height="82" /></div>
+    		<div class="spaceline"></div>
+            <div class="guobiao"><img alt="" src="images/guobiao.jpg" width="184" height="103" /></div>
+    		<div class="spaceline"></div>
+            <div class="share">
+            	<DIV class=bshare-custom><A class=bshare-qzone title=分享到QQ空间></A><A class=bshare-sinaminiblog title=分享到新浪微博></A><A class=bshare-renren title=分享到人人网></A><A class=bshare-qqmb title=分享到腾讯微博></A><A class=bshare-douban title=分享到豆瓣></A><A class="bshare-more bshare-more-icon more-style-addthis" title=更多平台></A></DIV>
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></SCRIPT>
+
+<SCRIPT type=text/javascript charset=utf-8 src="http://static.bshare.cn/b/bshareC0.js"></SCRIPT>
+            </div>
+        </div>
+    </div>
+    <div class="spaceline"></div>
+    <div class="footer">
+    	<div class="footer_left"></div>
+        <div class="footer_main">
+   	 		<div class="spaceline"></div>
+        	<div class="footer_nav"><a href="./" target="_blank" title="">加入我们</a> | <a href="./" target="_blank" title="">友情链接</a> | <a href="./" target="_blank" title="">网站地图</a> | <a href="./" target="_blank" title="">联系我们</a></div>
+            <p>© Copyright 2012保定金诺信化工涂料有限公司 版权所有  京ICP备05002557号</p>
+        </div>
+        <div class="footer_right">技术支持：恒动时空</div>
+    </div>
+    <div class="spaceline"></div>
 </body>
 </html>
