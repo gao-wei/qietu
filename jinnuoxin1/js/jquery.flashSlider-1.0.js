@@ -47,7 +47,7 @@
                 });
             };
             function setcurrnum(index) {
-                obj.find("#banner_nav li").eq(index).addClass('active').siblings().removeClass('active');
+                $("#banner_nav li").eq(index).addClass('active').siblings().removeClass('active');
             }
             function flash(index, clicked) {
                 $flashelement.stop();
