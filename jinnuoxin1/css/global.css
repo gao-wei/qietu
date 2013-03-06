@@ -148,35 +148,30 @@ a:active {
 .banner_nav {
 	height:25px;
 	width:960px;
-	filter:alpha(opacity=60);
-	-moz-opacity:0.6;
-	-khtml-opacity: 0.6;
-	opacity: 0.6;
 	z-index:99;
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:#000;
 	overflow:hidden;
 }
 .banner_nav ul {
-	width:140px;
+	width:70px;
 	padding-top:8px;
 	float:right;
 }
 .banner_nav ul li {
-	width:26px;
-	height:10px;
+	width:8px;
+	height:8px;
 	float:left;
 	overflow:hidden;
 	margin-right:7px;
-	background:#999;
+	background:#f4f5ed;
 	display:block;
-	color:#999;
+	color:#f4f5ed;
 }
 .banner_nav ul li.active {
-	background:#fff;
-	color:#fff;
+	background:#216e04;
+	color:#216e04;
 }
 .main_left {
 	float:left;
