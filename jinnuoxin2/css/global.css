@@ -449,7 +449,8 @@ a:active {
 }
 #index_demo_list ul {
 	height:145px;
-	width:2550px;
+	width:4750px;
+	overflow:hidden;
 }
 #index_demo_list ul li {
 	float:left;
@@ -468,17 +469,20 @@ a:active {
 	height:30px;
 	line-height:30px;
 }
-.index_demo_list span{
+
+.index_demo_list div.pre{
+	left:0px;
 	position:absolute;
 	width:26px;
 	height:23px;
 	top:50px;
 }
-.index_demo_list span.pre{
-	left:0px;
-}
-.index_demo_list span.next{
+.index_demo_list div.next{
 	right:0px;
+	position:absolute;
+	width:26px;
+	height:23px;
+	top:50px;
 }
 
 .index_demo_bottom {
