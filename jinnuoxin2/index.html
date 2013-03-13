@@ -7,6 +7,7 @@
 <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
 <script type="text/javascript" language="javascript" src="js/pngfix.js"></script>
 <script type="text/javascript" language="javascript" src="js/slides.min.jquery.js"></script>
+<script type="text/javascript" language="javascript" src="js/ScrollPic.js"></script>
 <script type="text/javascript" language="javascript">
 		$(function(){
 			$('#slides').slides({
@@ -258,9 +259,25 @@
                         <li><a href="./" target="_blank" title=""><img alt="" src="images/index_demo_list_img_5.jpg" width="150" height="105" /><p>管道防腐漆</p></a></li>
                     </ul>
                 </div>
-                <span class="pre"><img alt="" src="images/span_pre.gif" width="26" height="23" /></span>
-                <span class="next"><img alt="" src="images/span_next.gif" width="26" height="23" /></span>
+                <div class="pre" id="left_button"><img alt="" src="images/span_pre.gif" width="26" height="23" /></div>
+                <div class="next" id="right_button"><img alt="" src="images/span_next.gif" width="26" height="23" /></div>
             </div>
+            <script type="text/javascript" language="javascript">
+				var scrollPic_02 = new ScrollPic();
+				scrollPic_02.scrollContId   = "index_demo_list"; //内容容器ID
+				scrollPic_02.arrLeftId      = "left_button";//左箭头ID
+				scrollPic_02.arrRightId     = "right_button"; //右箭头ID
+		
+				scrollPic_02.frameWidth     = 930;//显示框宽度
+				scrollPic_02.pageWidth      = 190; //翻页宽度
+		
+				scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+				scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+				scrollPic_02.autoPlay       = true; //自动播放
+				scrollPic_02.autoPlayTime   = 3; //自动播放间隔时间(秒)
+		
+				scrollPic_02.initialize(); //初始化
+			</script>
             <div class="index_demo_bottom"></div>
         </div>
         <div class="spaceline"></div>
