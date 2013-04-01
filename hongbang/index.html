@@ -5,8 +5,64 @@
 <title>首页</title>
 <link type="text/css" href="css/global.css" rel="stylesheet" />
 <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript"  language="javascript">
+	var timeout         = 500;
+	var closetimer		= 0;
+	var ddmenuitem      = 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('div').eq(0).css('visibility', 'visible');
+}
+
+function jsddm_close(){
+	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+}
+
+function jsddm_timer(){	
+	closetimer = window.setTimeout(jsddm_close, timeout);
+}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+$(document).ready(function()
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);
+});
+
+document.onclick = jsddm_close;
+</script>
 </head>
 
 <body>
+	<div class="top">
+    	<div class="header_top"><a href="./" target="_blank" title="">中文</a> | <a href="./" target="_blank" title="">English</a></div>
+        <div class="header">
+            <div class="logo"><a href="./" target="_blank" title=""><img alt="" src="images/logo.jpg" width="210" height="97" /></a></div>
+            <div class="nav">
+            	<ul id="jsddm">
+                	<li><a href="./" target="_blank" title="">首&nbsp;&nbsp;页</a></li>
+                    <li><a href="./" target="_blank" title="">关于我们</a>
+                        <div><a href="./" target="_blank" title="">关于弘邦</a> / <a href="./" target="_blank" title="">领导致辞</a> / <a href="./" target="_blank" title="">弘邦愿景</a> / <a href="./" target="_blank" title="">组织结构</a> / <a href="./" target="_blank" title="">大事记</a></div>
+                    </li>
+                    <li><a href="./" target="_blank" title="">弘邦动态</a>
+                        <div><a href="./" target="_blank" title="">最新动态</a> / <a href="./" target="_blank" title="">行业咨询</a> / <a href="./" target="_blank" title="">品牌传播</a> / <a href="./" target="_blank" title="">下载中心</a></div>
+                    </li>
+                    <li><a href="./" target="_blank" title="">弘邦业务</a></li>
+                    <li><a href="./" target="_blank" title="">成功案例</a></li>
+                    <li><a href="./" target="_blank" title="">财富汇</a></li>
+                    <li><a href="./" target="_blank" title="">合作伙伴</a></li>
+                    <li><a href="./" target="_blank" title="">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 </body>
 </html>
