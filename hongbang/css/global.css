@@ -157,19 +157,19 @@ a:active {
 	color:#FFFFFF;
 	font-weight:bold;
 	font-size:12px;
-	padding:0px 5px;
+	padding:0px 2px;
 }
 .nav ul li.active div a:hover {
 	color:#190100;
 	font-weight:bold;
 	font-size:12px;
-	padding:0px 5px;
+	padding:0px 2px;
 }
 .nav ul li.active div a.hover:link , .nav ul li.active div a.hover:visited {
 	color:#190100;
 	font-weight:bold;
 	font-size:12px;
-	padding:0px 5px;
+	padding:0px 2px;
 }
 /* index_news */
 .index_news {
