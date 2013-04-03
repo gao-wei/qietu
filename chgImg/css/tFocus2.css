@@ -1,0 +1,31 @@
+* { margin:0; padding:0; word-break:break-all; }
+body { background:#FFF; color:#333; font:12px/1.6em Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size:1em; }
+a { color:#0287CA; text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul, li { list-style:none; }
+fieldset, img { border:none; }
+legend { display:none; }
+em, strong, cite, th { font-style:normal; font-weight:normal; }
+input, textarea, select, button { font:12px Helvetica, Arial, sans-serif; }
+table { border-collapse:collapse; }
+html { overflow:-moz-scrollbars-vertical; }
+.ink_phoBok{width:662px; height:415px; background:#E1E1E1; margin:0 auto; padding-left:14px;}
+.ink_phoBok #ifocus_pic { display: inline; position: relative; float: left; width: 524px; height: 415px; overflow: hidden; }
+.ink_phoBok #ifocus_piclist {position:absolute; top:20px }
+.ink_phoBok #ifocus_piclist li{width:524px; height:335px; overflow:hidden; }
+.ink_phoBok #tFocusBtn{ width: 111px; height: 415px; float: right; margin-right: 14px; background: #666666; position: relative; }
+.ink_phoBok .tFocus-prevBtn{ width: 91px; height: 20px; display: block; background: url(../images/prev_btn.jpg) no-repeat center center; cursor: pointer; s; position: absolute; left: 15px; top: 12px; }
+.ink_phoBok .tFocus-nextBtn{ background: url(../images/next_btn.jpg) no-repeat center center; position: absolute; left: 15px; bottom: 12px; height: 16px; width: 81px; cursor: pointer; }
+.ink_phoBok #ifocus_btn{ width: 118px; height: 352px; position: absolute; overflow: hidden; top: 36px; right: 0px; }
+.ink_phoBok #ifocus_btn ul{width:91px;height:10000px;position:absolute;left:0;top:0;}
+.ink_phoBok #ifocus_tx{position:absolute; left:0px; bottom:0px; height:59px; color:#333333; width:524px; }
+.ink_phoBok #ifocus_tx .normal{display:none;}
+.ifocus_t1 { height: 26px; padding-top: 3px; border-bottom: 1px dotted #BCBCBC; font-size: 14px; text-align: center; }
+.ifocus_t2 { line-height: 24px; text-align: center; }
+.ifocus_t2 img { position: relative; top: 3px; }
+.ink_phoBok #ifocus_btn li { height: 88px; width: 105px; padding-left: 13px; cursor: pointer; opacity: 0.9;  filter: alpha(opacity=90); color: #FFF; float:left }
+.ink_phoBok #ifocus_btn .current{ background: url(../images/ink_moveCutLi.jpg) no-repeat; opacity: 1; -moz-opacity: 1; filter: alpha(opacity=100); padding-top: 5px; color: #FFF; height: 83px; }
+.ink_phoBok #ifocus_btn li img{float:left}
+.ink_phoBok #ifocus_btn li span{height:16px;display:block; line-height:16px; float:left}
+.ink_phoBok #ifocus_btn .current span{}

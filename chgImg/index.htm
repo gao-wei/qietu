@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Js/jQuery上下箭头渐变图文切换（多张）相册特效</title>
+<link href="css/tFocus2.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/tFocus2.js"></script>
+</head>
+<div style="background:#FFF; padding:50px;">
+    <!--效果开始-->
+    <div class="ink_phoBok">
+        <div id="ifocus">
+            <div id="ifocus_pic" class="pics">
+                <div id="ifocus_piclist">
+                    <ul>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="科e互联网页特效" src="images/ink_movePic3.jpg" width="524" height="335" /></a></li>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="北京网站建设-科e互联" src="images/ink_movePic2.jpg" width="524" height="335" /></a></li>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="js纵向图片相册网页特效" src="images/ink_movePic1.jpg" width="524" height="335" /></a></li>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="javaScript/jQuery相册特效" src="images/ink_movePic4.jpg" width="524" height="335" /></a></li>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="网页特效下载地址:http://www.internetke.com" src="images/ink_movePic5.jpg" width="524" height="335" /></a></li>
+                        <li><a href="http://www.internetke.com" target="_blank"><img alt="网页特效集锦" src="images/ink_movePic6.jpg" width="524" height="335" /></a></li>
+                    </ul>
+                </div>
+                <div id="ifocus_opdiv"></div>
+                <div id="ifocus_tx" class="tFocusText">
+                    <ul>
+                        <li class="current">
+                            <div class="ifocus_t1">www.Internetke.com is very very GOOD.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /> 20 reviews</div>
+                        </li>
+                        <li class="normal">
+                            <div class="ifocus_t1">That man is the richest whose pleasure are the cheapest.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /> 0 reviews</div>
+                        </li>
+                        <li class="normal">
+                            <div class="ifocus_t1">Only those who have the patience to do simple.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /> 0 reviews</div>
+                        </li>
+                        <li class="normal">
+                            <div class="ifocus_t1">It never will rain roses.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /> 0 reviews</div>
+                        </li>
+                        <li class="normal">
+                            <div class="ifocus_t1">Welcome Schedule Our Parters Schedule Our Parters.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /><img src="images/ink_moveSquer.jpg" width="17" height="16" /> 5 reviews</div>
+                        </li>
+                        <li class="normal">
+                            <div class="ifocus_t1">Genius only means hard-working all one's life.</div>
+                            <div class="ifocus_t2">Average rating: <img src="images/ink_moveSquer.jpg" width="17" height="16" /> 0 reviews</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tFocusBtn">      
+                <span class="tFocus-nextBtn"></span>
+                <div id="ifocus_btn">
+                    <ul class="btns">
+                        <li class="current"><img src="images/ink_movePic3a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                        <li><img src="images/ink_movePic2a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                        <li><img src="images/ink_movePic1a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                        <li><img src="images/ink_movePic4a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                        <li><img src="images/ink_movePic5a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                        <li><img src="images/ink_movePic6a.jpg" width="101" height="65" /><span>Average rating</span></li>
+                    </ul>
+                </div>
+                <span class="tFocus-prevBtn"></span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new tFocus('ifocus',{changeStyle:'opac',timer:3000});
+        </script>
+    </div>
+    <!--End-->
+</div>
+
+</body>
+</html>
