@@ -4,7 +4,7 @@ body {
 	margin:0px; 
 	padding:0px; 
 	font-size:12px;
-	font-family:"宋体",Arial;
+	font-family:"微软雅黑";"宋体",Arial;
 }
 div, form, img, ul, ol, li, dl, dt, dd, p{ 
 	margin:0px; 
@@ -145,13 +145,13 @@ a:active {
 	color:#FFFFFF;
 	font-weight:bold;
 	font-size:12px;
-	padding:0px 3px;
+	padding:0px 2px;
 }
 .nav ul li div a:hover {
 	color:#190100;
 	font-weight:bold;
 	font-size:12px;
-	padding:0px 3px;
+	padding:0px 2px;
 }
 .nav ul li.active div a:link , .nav ul li.active div a:visited {
 	color:#FFFFFF;
@@ -186,14 +186,15 @@ a:active {
 	margin:0px auto;
 }
 #index_news_list {
-	width:1000px;
+	width:999px;
 	margin:0px auto;
 	height:110px;
 	overflow:hidden;
+	border-right:1px #fff solid;
 }
 .show_box {
 	height:110px;
-	width:1000px;
+	width:999px;
 	position:absolute;
 	overflow:hidden;
 	z-index:0;
@@ -224,6 +225,14 @@ a:active {
 	font-size:12px;
 	text-align:left;
 	padding-left:20px;
+	color:#848484;
+}
+#index_news_list ul li a:hover p {
+	line-height:20px;
+	font-size:12px;
+	text-align:left;
+	padding-left:20px;
+	color:#848484;
 }
 .index_news_list div.pre{
 	left:0px;
@@ -332,23 +341,25 @@ a:active {
 	height:113px;
 	background:url(../images/banner_news_bg.gif) repeat-x;
 	font-family:"微软雅黑";
+	margin-top:30px;
 }
 .banner_news_list {
-	width:1000px;
+	width:999px;
 	position:relative;
 	height:113px;
 	overflow:hidden;
 	margin:0px auto;
 }
 #banner_news_list {
-	width:940px;
+	width:939px;
 	margin:0px auto;
 	height:113px;
 	overflow:hidden;
+	border-right:1px #fff solid;
 }
 .show_box {
 	height:113px;
-	width:940px;
+	width:939px;
 	position:absolute;
 	overflow:hidden;
 	z-index:0;
@@ -486,13 +497,14 @@ a:active {
 }
 /* download */
 .download_list {
-
+	width:880px;
 }
 .download_list ul {
 }
 .download_list ul li {
-	padding:25px 0px;
-	border-bottom:1px #171717 dashed;
+	background:url(../images/download_list_bg.gif) no-repeat;
+	height:163px;
+	padding-top:36px;
 }
 .download_list_img {
 	width:280px;
@@ -539,10 +551,11 @@ a:active {
 /* hezuo */
 .hezuo_list {
 	width:278px;
-	height:154px;
+	height:164px;
 	float:left;
 	margin-right:15px;
 	padding-bottom:20px;
+	background:url(../images/hezuo_list_bg.gif) no-repeat;
 }
 .hezuo_list img {
 	width:276px;
@@ -550,9 +563,8 @@ a:active {
 	border:1px #282828 solid;
 }
 .hezuo_list p {
-	height:30px;
+	height:31px;
 	line-height:20px;
-	border-bottom:1px #ccc dashed;
 	margin-bottom:10px;
 }
 
@@ -560,8 +572,8 @@ a:active {
 .huagong_list {
 	height:185px;
 	overflow:hidden;
-	padding:20px 0px;
-	border-bottom:1px #454545 dotted;
+	padding:35px 0px;
+	background:url(../images/huagong_list_bg.gif) no-repeat;
 }
 .huagong_list_img {
 	width:335px;
@@ -578,14 +590,199 @@ a:active {
 	color:#ae8631;
 }
 .huagong_list_content h3 span {
-	float:right;
 	line-height:70px;
 	color:#858585;
 	font-size:14px;
+	padding-left:40px;
 }
 .huagong_list_content p a:link , .huagong_list_content p a:visited {
 	line-height:25px;
 	font-size:12px;
 	color:#5e5a5b;
 	font-weight:bold;
+}
+/* events */
+.events {
+	width:880px;
+	height:538px;
+	overflow:hidden;
+	background:url(../images/events_bg.gif) no-repeat;
+}
+.events_list_top {
+	width:830px;
+	height:57px;
+	background:url(../images/events_list_top.gif) no-repeat;
+}
+.events_list_body {
+	width:830px;
+	background:url(../images/events_list_body_bg.gif) repeat-y;
+	height:470px;
+	overflow:hidden;
+}
+.events_list_bottom {
+	width:830px;
+	height:10px;
+	background:url(../images/events_list_bottom.gif) no-repeat;
+}
+.events_sider {
+	width:50px;
+	float:right;
+	height:537px;
+	overflow:hidden;
+}
+/* events */
+.events {
+	width:880px;
+	height:538px;
+	overflow:hidden;
+	background:url(../images/events_bg.gif) no-repeat;
+}
+.events_list {
+	line-height:40px;
+	background:url(../images/events_list_bg.gif) 0px 20px no-repeat;
+	margin:0px 20px;
+	border-bottom:1px #a7a7a7 dashed;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:20px;
+}
+#ifocus_pic { 
+	display: inline; 
+	position: relative; 
+	float: left; 
+	width: 830px; 
+	height: 508px; 
+	overflow: hidden; 
+}
+#ifocus_piclist {
+	position:absolute; 
+	top:57px;
+}
+#ifocus_piclist ul {
+	padding-left:5px;
+}
+#ifocus_piclist li{
+	width:820px; 
+	height:508px; 
+	overflow:hidden;
+	background:#f2f2f2;
+}
+#tFocusBtn{
+	width: 50px; 
+	height:508px; 
+	float: right;
+	position: relative;
+	background:url(../images/tFocusBtn_bg.gif) no-repeat;
+}
+.tFocus-prevBtn{
+	width: 30px; 
+	height: 30px; 
+	display: block; 
+	background: url(../images/tFocus_prev_btn.gif) no-repeat center center; 
+	cursor: pointer; 
+	position: absolute;
+	right:2px;
+	top: 2px;
+}
+.tFocus-nextBtn{
+	width: 30px; 
+	height: 30px; 
+	display: block; 
+	background: url(../images/tFocus_next_btn.gif) no-repeat center center; 
+	cursor: pointer; 
+	position: absolute; 
+	right:2px;
+	bottom: 2px;
+}
+#ifocus_tx{
+	position:absolute; l
+	eft:0px; 
+	bottom:0px; 
+	height:59px; 
+	color:#333333; 
+	width:524px;
+	display:none;
+}
+#ifocus_tx .normal{
+	display:none;
+}
+#ifocus_btn{
+	width: 50px; 
+	height: 424px; 
+	position: absolute; 
+	overflow: hidden; 
+	top:54px; 
+	right:0px;
+}
+#ifocus_btn ul{
+	width:50px;
+	height:848px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+#ifocus_btn li {
+	height:45px; 
+	width: 30px;
+	cursor: pointer;
+	background:url(../images/ifocus_btn_li_bg.gif);
+	color:#000000;
+	padding:8px 0px 0px 20px;
+}
+#ifocus_btn .current{
+	background:url(../images/ifocus_btn_li_active_bg.gif);
+	font-weight:bold;
+}
+
+/* contact */
+.contact_form {
+	width:878px;
+	height:610px;
+	margin:0px auto;
+	background:url(../images/contact_form_bg.gif) no-repeat;
+	padding-top:81px;
+}
+.contact_form_info {
+	padding-left:80px;
+	height:48px;
+}
+.contact_form_info span {
+	display:block;
+	width:190px;
+	height:48px;
+	float:left;
+	color:#323232;
+	font-size:14px;
+	font-weight:bold;
+}
+.contact_form_input {
+	width:580px;
+	float:right;
+	height:48px;
+}
+.contact_form_input_text {
+	width:310px;
+	height:20px;
+	border-top:1px #6a6a6a solid;
+	border-left:1px #b8b8b8 solid;
+	border-right:1px #b8b8b8 solid;
+	border-bottom:1px #dfdfdf solid;
+}
+.contact_form_input_button {
+	border:none;
+	background:url(../images/contact_form_input_button_bg.gif) no-repeat;
+	width:50px;
+	height:31px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+.contact_form_input_button2{
+	border:none;
+	background:url(../images/contact_form_input_button_bg2.gif) no-repeat;
+	width:50px;
+	height:31px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-family:"微软雅黑";
 }

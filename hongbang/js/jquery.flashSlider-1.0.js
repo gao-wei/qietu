@@ -38,7 +38,7 @@
             };
             if (options.controlsShow) {
 				 $("#banner_nav li").hover(function() {
-                    var num = $(this).html();
+                    var num = $(this).attr('id');
                     flash(num, true);
                 }, function() {
                     timeout = setTimeout(function() {
